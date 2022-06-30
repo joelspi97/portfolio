@@ -1,0 +1,6 @@
+@mixin project-icon-hover ($width, $height, $x, $y, $transition-duration) {
+    width: $width;
+    height: $height;
+    transform: translate($x, $y);
+    transition: all $transition-duration;
+}

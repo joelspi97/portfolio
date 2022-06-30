@@ -1,0 +1,182 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins/icon.scss';
+
+.about-me {
+    z-index: 2;
+    background-color: transparent;
+
+    &__animation {
+        position: absolute;
+        z-index: -1;
+        background-color: $portfolio-white;
+        width: 100%;
+        height: 100%;
+
+        div {
+            position: absolute;
+            width: 6rem;
+            height: 6rem;
+            background-color: transparent;
+            border: 0.3rem solid $dark-blue;
+            border-radius: 25rem;
+        }
+
+        div:nth-child(1) {
+            top: 32%;
+            left: 12%;
+            animation: bubbles 9s linear infinite;
+        }
+
+        div:nth-child(2) {
+            top: 57%;
+            left: 70%;
+            animation: bubbles 7s linear infinite;
+        }
+
+        div:nth-child(3) {
+            top: 57%;
+            left: 16%;
+            animation: bubbles 6s linear infinite;
+        }
+
+        div:nth-child(4) {
+            top: 56%;
+            left: 78%;
+            animation: bubbles 11s linear infinite;
+        }
+
+        div:nth-child(5) {
+            top: 55%;
+            left: 25%;
+            animation: bubbles 9s linear infinite;
+        }
+
+        div:nth-child(6) {
+            top: 32%;
+            left: 75%;
+            animation: bubbles 5s linear infinite;
+        }
+
+        div:nth-child(7) {
+            display: none;
+        }
+
+        div:nth-child(8) {
+            display: none;
+        }
+
+        div:nth-child(9) {
+            display: none;
+        }
+
+        div:nth-child(10) {
+            display: none;
+        }
+
+        div:nth-child(11) {
+            display: none;
+        }
+
+    }
+
+    &__heading-container {
+        margin-bottom: 2.5rem;
+    }
+    
+    &__image-container {
+        margin-bottom: 2.5rem;
+
+        img {
+            width: 14.5rem;
+        }
+    }
+
+    &__text-container {
+        p {
+            font-size: 1.85rem;
+            margin-top: 2.5rem;
+            max-width: 70rem;
+        } 
+    }
+    &__text-container :first-child {
+        font-weight: 600;
+    }
+}
+
+@keyframes bubbles {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: scale(1.3) translateY(-9rem);
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .about-me {
+        &__animation {
+            div:nth-child(7) {
+                display: block;
+                top: 40%;
+                left: 62%;
+                animation: bubbles 6s linear infinite;
+            }
+            div:nth-child(8) {
+                display: block;
+                top: 32%;
+                left: 21%;
+                animation: bubbles 6s linear infinite;
+            }
+        }
+            
+        &__image-container {
+            img {
+                width: 16rem;
+            }
+        }    
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .about-me {
+        &__image-container {
+            img {
+                width: 17.5rem;
+            }
+        }    
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .about-me {
+        &__animation {
+            div:nth-child(9) {
+                display: block;
+                top: 63%;
+                left: 37%;
+                animation: bubbles 5.5s linear infinite;
+            }
+            div:nth-child(10) {
+                display: block;
+                top: 37%;
+                left: 33%;
+                animation: bubbles 4.5s linear infinite;       
+            }
+            div:nth-child(11) {
+                display: block;
+                top: 61%;
+                left: 60%;
+                animation: bubbles 8s linear infinite;       
+            }
+        }
+
+        &__image-container {
+            img {
+                width: 19.5rem;
+            }
+        }    
+    }
+}

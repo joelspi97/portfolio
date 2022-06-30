@@ -1,0 +1,60 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins/icon.scss';
+
+.section {
+    scroll-margin-top: -7.5rem;
+    position: relative;
+    width: 100%;
+    padding: 9rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0rem 1rem 0.5rem 0rem rgba(0, 0, 0, 0.25) inset;
+}
+
+.section-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.section-decoration {
+    width: 17rem;
+    height: 17rem;
+    position: absolute;
+    bottom: calc(100% - 4.5rem);
+    border-radius: 25rem;
+    background-color: $dark-blue;
+    box-shadow: 0rem 1rem 0.5rem 0rem rgba(0, 0, 0, 0.25);
+}
+
+.project-button {
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    left: -10000px;
+
+    padding: 0.6rem 0.8rem;
+    background-color: $portfolio-white;
+    color: $dark-blue;
+    border: 0.1rem solid $dark-blue;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2.5rem;
+
+    &:focus {
+        outline: 0.2rem solid $dark-blue;
+    }
+}
+
+.arrow-icon {
+    @include icon(2rem, 1.6rem, "../../assets/icons/right-arrow.svg");
+    margin-right: -0.3rem;
+    margin-bottom: -0.3rem;
+}

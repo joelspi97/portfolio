@@ -1,0 +1,82 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins/icon.scss';
+
+.contact {
+    background-color: $portfolio-white;
+    color: $dark-blue;
+
+    &.section {
+        padding-bottom: 0;
+    }
+
+    h1 {
+        margin-bottom: 2.5rem;
+    }
+
+    &__image-container {
+        width: 100%;
+        margin-bottom: 2.5rem;
+        
+        img {
+            border-radius: 25rem;
+            width: 40%;
+            min-width: 21rem;
+            max-width: 30rem;
+        }
+    }
+
+    &__links-container {
+        width: 80%;
+        min-width: 28rem;
+        max-width: 70rem;
+        margin-bottom: 6rem;
+        display: flex;
+        justify-content: space-evenly;
+        
+        a {
+            align-items: center;
+            border-radius: 0.5rem;
+            color: $dark-blue;
+            display: flex;
+            width: 18rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+            flex-direction: column;
+            padding: 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 200ms ease-in-out;
+
+            span {
+                border-radius: 50%;
+                margin-bottom: 0.8rem
+            }
+
+            .linkedin-icon {
+                @include icon(8rem, 8rem, "../../assets/icons/linkedin_icon-large.png");
+            }
+
+            .github-icon {
+                @include icon(8rem, 8rem, "../../assets/icons/github_icon-large.png");
+            }
+
+            .mail-icon {
+                @include icon(8rem, 8rem, "../../assets/icons/mail_icon-large.png");
+            }
+        }
+        a:hover span,
+        a:focus span {
+            background-color: rgb(255, 254, 199);
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .contact {
+        &__links-container {
+            a {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

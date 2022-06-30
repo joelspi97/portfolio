@@ -18,6 +18,8 @@ function App() {
       </main>
       <footer className="footer">
         <p>Made by Joel Spinelli with <span aria-label="love">❤️️</span> and <span aria-label="porcine power">🐷</span></p>
+        <br />
+        <p>Want to see the code of this website? <a href="https://github.com/joelspi97/portfolio" target="_blank" aria-label="Visit this website Github repository.">Click here!</a></p>
       </footer>
     </>
   );

@@ -63,11 +63,17 @@
             .mail-icon {
                 @include icon(8rem, 8rem, "../../assets/icons/mail_icon-large.png");
             }
+
+            &:focus {
+                outline: 0.2rem solid $dark-blue;
+            }
+
+            &:hover span,
+            &:focus span {
+                background-color: rgb(255, 254, 199);
+            }
         }
-        a:hover span,
-        a:focus span {
-            background-color: rgb(255, 254, 199);
-        }
+
     }
 }
 

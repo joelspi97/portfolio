@@ -10,7 +10,17 @@
     p {
         font-size: 1.4rem;
         font-weight: 600;
+    }
+    
+    p:last-of-type {
         margin-bottom: 3rem;
+    }
+
+    a {
+        &:focus {
+            border-radius: 0.25rem;
+            outline: 0.2rem solid $dark-blue;
+        }
     }
 }
 

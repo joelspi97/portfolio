@@ -1,5 +1,6 @@
 import React from 'react';
 import '../scss/components/header.scss';
+import profilePicture from '../assets/profile-picture.jpg';
 
 function Header() {
   return (
@@ -17,12 +18,10 @@ function Header() {
                 <a className="nav-link" href="#contact">Contact</a>
             </div>
         </nav>
-        <div className="header__image-container center-content">
-            <img src="./assets/self-portrait-mobile.jpg" alt="" />
-        </div>
-        <div className="header__text-container center-content">
-            <h1 className="section-heading">Front-end development</h1>
-            <p>My goal is to create websites that look as well as they work</p>
+        <div className="header__content-container center-content">
+            <h1 className="section-heading">Front-end development &amp; Web Accessibility</h1>
+            <img src={profilePicture} alt="" />
+            {/* <h2>Joel Spinelli</h2> */}
         </div>
     </header>
   );

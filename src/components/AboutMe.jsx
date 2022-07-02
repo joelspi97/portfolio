@@ -19,8 +19,13 @@ function AboutMe() {
                 <h1 className="section-heading">Hello, my name is <span>Joel Spinelli</span>.</h1>
             </div>
             <div className="about-me__text-container center-content">
-                <p>I'm a Front-end developer with a soft spot for web accessibility.</p>
-                <p>My goal is to make every website I create fully responsive, pixel perfect and accessible.</p>
+                <p>I'm a Front-end developer with a passion for web accessibility.</p>
+                <p>
+                    Currently working for the development team of the Goverment of the Province of Buenos Aires
+                    <br />
+                    and have worked for the National University of Technology of Buenos Aires before.
+                </p>
+                <p>My goal is to make every website I work on fully responsive, pixel perfect and accessible.</p>
             </div>
             <div className="about-me__stack center-content">
                 <h2>My stack:</h2>

@@ -10,10 +10,10 @@
     p {
         font-size: 1.4rem;
         font-weight: 600;
-    }
-    
-    p:last-of-type {
-        margin-bottom: 3rem;
+
+        &:first-of-type {
+            margin-bottom: 1rem;
+        }
     }
 
     a {

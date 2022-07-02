@@ -7,7 +7,9 @@
     color: $dark-blue;
 
     &__heading-container {
-        margin-top: 3.5rem;
+        span {
+            color: $green;
+        }
     }
     
     &__image-container {
@@ -32,7 +34,6 @@
     }
     
     &__stack {
-        padding: 0 5rem;
         width: 100%;
 
         h2 {
@@ -41,12 +42,12 @@
         }
 
         .language-wrapper {
-            margin-top: 2.5rem;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            display: flex;
+            display: grid;
             gap: 6rem;
+            grid-template-columns: repeat(auto-fill, minmax(10rem, 19.7rem));
+            justify-content: center;
+            justify-items: center;
+            margin-top: 2.5rem;
 
             .language {
                 width: 10rem;
@@ -58,6 +59,7 @@
 
                 span {
                     font-size: 1.85rem;
+                    font-weight: 600;
                 }
             }
         }

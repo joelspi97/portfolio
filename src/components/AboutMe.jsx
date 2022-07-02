@@ -16,13 +16,11 @@ function AboutMe() {
     <section className="section about-me" id="about-me">
             <div className="section-decoration"></div>
             <div className="about-me__heading-container center-content">
-                <h1 className="section-heading">
-                    Hello, my name is Joel Spinelli
-                </h1>
+                <h1 className="section-heading">Hello, my name is <span>Joel Spinelli</span>.</h1>
             </div>
             <div className="about-me__text-container center-content">
                 <p>I'm a Front-end developer with a soft spot for web accessibility.</p>
-                <p>My goal is to make every website I make fully responsive, pixel perfect and accessible.</p>
+                <p>My goal is to make every website I create fully responsive, pixel perfect and accessible.</p>
             </div>
             <div className="about-me__stack center-content">
                 <h2>My stack:</h2>

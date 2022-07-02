@@ -19,7 +19,7 @@
         
         img {
             border-radius: 25rem;
-            width: 40%;
+            width: 90%;
             min-width: 21rem;
             max-width: 30rem;
         }
@@ -27,10 +27,11 @@
 
     &__links-container {
         width: 80%;
-        min-width: 28rem;
         max-width: 70rem;
         margin-bottom: 6rem;
         display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
         justify-content: space-evenly;
         
         a {

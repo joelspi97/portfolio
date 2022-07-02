@@ -93,12 +93,12 @@
         .menu {
             opacity: 0;
             visibility: hidden;
-            min-width: 28rem;
             position: absolute;
-            left: calc(100% - 30rem);
+            left: calc(100% - 13.7rem);
             text-align: center;
             background-color: $dark-blue;
             transition-duration: 300ms;
+
             a {
                 padding: 1rem;
                 display: block;
@@ -107,6 +107,7 @@
                 border: 0.1rem solid $portfolio-white;
                 transition-duration: 300ms;
             }
+
             a:hover,
             a:focus {
                 background-color: $portfolio-white;
@@ -125,7 +126,6 @@
         
         img {
             border-radius: 25rem;
-            margin-bottom: 2.5rem;
             max-width: 35rem;
             width: 100%;
         }
@@ -142,10 +142,12 @@
         &__nav {
             display: flex;
             justify-content: center;
+
             #toggle:checked + .menu {
                 visibility: visible;
                 opacity: 1;
             }
+
             .menu {
                 visibility: visible;
                 opacity: 1;
@@ -161,6 +163,7 @@
                     border-radius: 0.5rem;
                 }
             }
+            
             label {
                 display: none;
             }

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
+import ProjectsSection from './components/ProjectsSection';
 import Contact from './components/Contact';
 import './scss/core/resets.scss';
 import './scss/core/generic-classes.scss';
@@ -13,7 +13,7 @@ function App() {
       <Header />
       <main>
         <AboutMe />
-        <Projects />
+        <ProjectsSection />
         <Contact />
       </main>
       <footer className="footer">

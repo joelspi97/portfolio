@@ -14,39 +14,39 @@
     }
 
     &__image-container {
-        width: 100%;
         margin-bottom: 2.5rem;
+        width: 100%;
         
         img {
             border-radius: 25rem;
-            width: 90%;
-            min-width: 21rem;
             max-width: 30rem;
+            min-width: 21rem;
+            width: 90%;
         }
     }
 
     &__links-container {
-        width: 80%;
-        max-width: 70rem;
-        margin-bottom: 6rem;
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: space-evenly;
+        margin-bottom: 6rem;
+        max-width: 70rem;
+        width: 80%;
         
         a {
             align-items: center;
             border-radius: 0.5rem;
             color: $dark-blue;
             display: flex;
-            width: 18rem;
+            flex-direction: column;
             font-weight: 700;
             font-size: 1.5rem;
-            flex-direction: column;
             padding: 1rem;
             text-align: center;
             text-decoration: none;
             transition: background-color 200ms ease-in-out;
+            width: 18rem;
 
             span {
                 border-radius: 50%;
@@ -54,15 +54,15 @@
             }
 
             .linkedin-icon {
-                @include icon(8rem, 8rem, "../../assets/icons/linkedin_icon-large.png");
+                @include icon(8rem, 8rem, "../../assets/icons/linkedin_icon.png");
             }
 
             .github-icon {
-                @include icon(8rem, 8rem, "../../assets/icons/github_icon-large.png");
+                @include icon(8rem, 8rem, "../../assets/icons/github_icon.png");
             }
 
             .mail-icon {
-                @include icon(8rem, 8rem, "../../assets/icons/mail_icon-large.png");
+                @include icon(8rem, 8rem, "../../assets/icons/mail_icon.png");
             }
 
             &:focus {

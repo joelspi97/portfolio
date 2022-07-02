@@ -86,26 +86,28 @@
         }
 
         #toggle:checked + .menu {
-            visibility: visible;
             opacity: 1;
+            visibility: visible;
         }
 
         .menu {
-            opacity: 0;
-            visibility: hidden;
-            position: absolute;
-            left: calc(100% - 13.7rem);
-            text-align: center;
             background-color: $dark-blue;
-            transition-duration: 300ms;
+            left: calc(100% - 13.7rem);
+            opacity: 0;
+            position: absolute;
+            text-align: center;
+            transition: background-color 0.15s ease-in-out,
+                        color 0.15s ease-in-out;
+            visibility: hidden;
 
             a {
-                padding: 1rem;
-                display: block;
-                text-decoration: none;
-                color: $portfolio-white;
                 border: 0.1rem solid $portfolio-white;
-                transition-duration: 300ms;
+                color: $portfolio-white;
+                display: block;
+                padding: 1rem;
+                text-decoration: none;
+                transition: background-color 0.15s ease-in-out,
+                            color 0.15s ease-in-out;
             }
 
             a:hover,
@@ -157,10 +159,10 @@
                 margin-bottom: 1rem;
                 width: 100%;
                 max-width: 80rem;
+
                 a {
-                    display: inline-block;
-                    border: none;
                     border-radius: 0.5rem;
+                    display: inline-block;
                 }
             }
             

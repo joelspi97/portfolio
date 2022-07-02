@@ -2,9 +2,9 @@
 @import '../abstracts/mixins/icon.scss';
 
 .about-me {
-    z-index: 2;
     background-color: $portfolio-white;
     color: $dark-blue;
+    z-index: 2;
 
     &__heading-container {
         span {

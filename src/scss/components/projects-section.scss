@@ -1,7 +1,5 @@
 @import '../abstracts/variables.scss';
 @import '../abstracts/mixins/icon.scss';
-@import '../abstracts/mixins/project-hover.scss';
-@import '../abstracts/mixins/project-icon-hover.scss';
 
 .projects-section {
     background-color: $dark-blue;
@@ -30,6 +28,7 @@
     .projects-section {
         &__grid-container {
             grid-column-gap: 3.5rem;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
@@ -38,7 +37,7 @@
     .projects-section {
         &__grid-container {
             grid-gap: 5rem;
-            grid-template-columns: 1fr 1fr;
+
         }
     }
 }
@@ -47,6 +46,14 @@
     .projects-section {
         &__grid-container {
             grid-gap: 6rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .projects-section {
+        &__grid-container {
+            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         }
     }
 }

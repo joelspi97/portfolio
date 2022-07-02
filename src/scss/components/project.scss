@@ -1,7 +1,5 @@
 @import '../abstracts/variables.scss';
 @import '../abstracts/mixins/icon.scss';
-@import '../abstracts/mixins/project-hover.scss';
-@import '../abstracts/mixins/project-icon-hover.scss';
 
 .project {
     align-items: center;
@@ -11,7 +9,7 @@
     display: flex;
     flex-direction: column;
     font-family: $projects-font;
-    padding: 2.5rem 6rem;
+    padding: 2.5rem 3rem;
     width: 100%;
 
     &__heading-wrapper {
@@ -42,9 +40,14 @@
     }
 
     &__stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        list-style: none;
         margin-bottom: 3rem;
 
-        span {
+        li {
             color: $dark-green;
             font-size: 1.6rem;
             font-style: italic;
@@ -80,7 +83,7 @@
 
     &__button {
         background-color: $dark-green;
-        border: 0.2rem solid $portfolio-white;
+        border: 0.1rem solid $portfolio-white;
         border-radius: 2.5rem;
         color: $portfolio-white;
         cursor: pointer;
@@ -90,19 +93,34 @@
         padding: 1rem;
         text-align: center;
         text-decoration: none;
+        transition: background-color 0.15s ease-in-out,
+                    border-color 0.15s ease-in-out,
+                    color 0.15s ease-in-out;
     
         &:focus {
             outline: 0.2rem solid $dark-blue;
         }
 
+        &:hover,
+        &:focus {
+            background-color: $blue;
+        }
+
         &--show-more {
             background-color: $portfolio-white;
-            border: 0.2rem solid #00568c;
-            border-radius: 2.5rem;
-            color: #00568c;
-            margin-bottom: 3rem;
+            border: 0.3rem solid $blue;
+            border-radius: 0.5rem;
+            color: $blue;
+            margin-bottom: 6rem;
             margin-right: auto;
             margin-top: unset;
+
+            &:hover,
+            &:focus {
+                background-color: $portfolio-white;
+                border-color: $dark-green;
+                color: $dark-green;
+            }
         }
     }
     
@@ -110,6 +128,18 @@
         @include icon(2rem, 1.6rem, "../../assets/icons/right-arrow.svg");
         margin-bottom: -0.3rem;
         margin-right: -0.3rem;
+    }   
+}
+
+@media only screen and (min-width: 900px) {
+    .project {
+        padding-left: 6rem;
+        padding-right: 6rem;
+        
+        &__button {
+            &--show-more {
+                margin-bottom: 3rem;
+            }
+        }
     }
-    
 }

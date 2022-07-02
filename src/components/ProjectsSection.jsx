@@ -15,7 +15,6 @@ function Projects() {
           iconClassName='movie-finder-icon'
           route=''
         >
-          <h3>This project features:</h3>
           <ol>
             <li>An infinite scroll list, which retrieves data from an API to display movies.</li>
             <li>An input which allows the user to search for specific titles.</li>
@@ -31,7 +30,6 @@ function Projects() {
           iconClassName='to-do-list-icon'
           route=''
         >
-          <h3>This project features:</h3>
           <ol>
             <li>A menu for users to create their own to-do's, which can later be edited, marked as completed and/or deleted.</li>
             <li>Usage of a third party library to make to-do's draggable and droppable to rearrange them.</li>

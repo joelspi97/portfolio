@@ -12,11 +12,11 @@ function Contact() {
         </div>
         <div className="contact__links-container">
             <a href="https://www.linkedin.com/in/joel-spinelli-497a1418b/" title="LinkedIn profile" target="_blank"
-                rel="noreferrer" aria-label="Visit my LinkedIn profile">
+                rel="noreferrer" aria-label="Visit my LinkedIn profile.">
                 <span className="linkedin-icon"></span>
                 LinkedIn
             </a>
-            <a href="https://github.com/joelspi97" title="Github profile" target="_blank" rel="noreferrer" aria-label="Visit my GitHub profile">
+            <a href="https://github.com/joelspi97" title="Github profile" target="_blank" rel="noreferrer" aria-label="Visit my GitHub profile.">
                 <span className="github-icon"></span>
                 GitHub
             </a>

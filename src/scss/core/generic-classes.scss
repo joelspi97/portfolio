@@ -2,15 +2,15 @@
 @import '../abstracts/mixins/icon.scss';
 
 .section {
-    scroll-margin-top: -7.5rem;
-    position: relative;
-    width: 100%;
-    padding: 12rem 2rem;
+    align-items: center;
+    // box-shadow: 0rem 1rem 0.5rem 0rem rgba(0, 0, 0, 0.25) inset;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    box-shadow: 0rem 1rem 0.5rem 0rem rgba(0, 0, 0, 0.25) inset;
+    padding: 12rem 2rem;
+    position: relative;
+    scroll-margin-top: -7.5rem;
+    width: 100%;
 }
 
 .section-heading {
@@ -23,11 +23,22 @@
 }
 
 .section-decoration {
-    width: 17rem;
+    background-color: $dark-blue;
+    border-radius: 25rem;
+    bottom: calc(100% - 4.5rem);
+    // box-shadow: 0rem 1rem 0.5rem 0rem rgba(0, 0, 0, 0.25);
     height: 17rem;
     position: absolute;
-    bottom: calc(100% - 4.5rem);
-    border-radius: 25rem;
-    background-color: $dark-blue;
-    box-shadow: 0rem 1rem 0.5rem 0rem rgba(0, 0, 0, 0.25);
+    width: 17rem;
+}
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px !important;
 }

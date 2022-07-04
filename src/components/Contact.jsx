@@ -1,4 +1,5 @@
 import React from 'react';
+import AnimatedDiv from './AnimatedDiv';
 import '../scss/components/contact.scss';
 import profilePicture from '../assets/profile-picture.jpg';
 
@@ -6,11 +7,13 @@ function Contact() {
   return (
     <section className="contact section" id="contact">
       <div className="section-decoration"></div>
-        <h1 className="section-heading">Get in touch!</h1>
-        <div className="contact__image-container center-content">
+        <AnimatedDiv>
+          <h1 className="section-heading">Get in touch!</h1>
+        </AnimatedDiv>
+        <AnimatedDiv elementClassName="contact__image-container center-content">
             <img src={profilePicture} alt="" />
-        </div>
-        <div className="contact__links-container">
+        </AnimatedDiv>
+        <AnimatedDiv elementClassName="contact__links-container">
             <a href="https://www.linkedin.com/in/joel-spinelli-497a1418b/" title="Visit my LinkedIn profile" target="_blank"
                 rel="noreferrer" aria-label="Visit my LinkedIn profile.">
                 <span className="linkedin-icon"></span>
@@ -24,7 +27,7 @@ function Contact() {
                 <span className="mail-icon"></span>
                 Send me an email!
             </a>
-        </div>
+        </AnimatedDiv>
     </section>
   );
 }

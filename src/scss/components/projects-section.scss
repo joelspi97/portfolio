@@ -4,6 +4,7 @@
 .projects-section {
     background-color: $dark-blue;
     color: $portfolio-white;
+    overflow: hidden;
     z-index: 1;
 
     .section-decoration {

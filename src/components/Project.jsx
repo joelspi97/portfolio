@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import AnimatedArticle from './AnimatedArticle';
 import '../scss/components/project.scss';
 
 function Project(props) {
@@ -7,6 +8,7 @@ function Project(props) {
             description,
             iconClassName,
             route,
+            left,
             children } = props;
 
     const [showMore, setShowMore] = useState(false);
@@ -20,7 +22,7 @@ function Project(props) {
     }, [showMore]);
 
     return (
-        <article className="project">
+        <AnimatedArticle elementClassName="project" left={left}>
             <div className="project__heading-wrapper">
                 <span className={iconClassName}></span>
                 <h2>{name}</h2>
@@ -75,7 +77,7 @@ function Project(props) {
             >
                 View project <span className="arrow-icon"></span>
             </a>
-        </article>
+        </AnimatedArticle>
     );
 }
 

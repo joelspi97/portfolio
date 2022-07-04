@@ -1,5 +1,6 @@
 import React from 'react';
 import '../scss/components/about-me.scss';
+import AnimatedDiv from './AnimatedDiv';
 import htmlIcon from '../assets/icons/html-icon.png';
 import cssIcon from '../assets/icons/css-icon.png';
 import javascriptIcon from '../assets/icons/javascript-icon.png';
@@ -15,10 +16,10 @@ function AboutMe() {
   return (
     <section className="section about-me" id="about-me">
             <div className="section-decoration"></div>
-            <div className="about-me__heading-container center-content">
+            <AnimatedDiv elementClassName="about-me__heading-container center-content">
                 <h1 className="section-heading">Hello, my name is <span>Joel Spinelli</span>.</h1>
-            </div>
-            <div className="about-me__text-container center-content">
+            </AnimatedDiv>
+            <AnimatedDiv elementClassName="about-me__text-container center-content">
                 <p>I'm a Front-end developer with a passion for web accessibility.</p>
                 <p>
                     Currently working for the development team of the Goverment of the Province of Buenos Aires
@@ -26,20 +27,22 @@ function AboutMe() {
                     and have worked for the National University of Technology of Buenos Aires before.
                 </p>
                 <p>My goal is to make every website I work on fully responsive, pixel perfect and accessible.</p>
-            </div>
+            </AnimatedDiv>
             <div className="about-me__stack center-content">
-                <h2>My stack:</h2>
+                <AnimatedDiv>
+                    <h2>My stack:</h2>
+                </AnimatedDiv>
                 <div className="language-wrapper">
-                    <div className="language"><img src={htmlIcon} alt="" /><span>HTML5</span></div>
-                    <div className="language"><img src={cssIcon} alt="" /><span>CSS3</span></div>
-                    <div className="language"><img src={javascriptIcon} alt="" /><span>JavaScript</span></div>
-                    <div className="language"><img src={reactIcon} alt="" /><span>React</span></div>
-                    <div className="language"><img src={reduxIcon} alt="" /><span>Redux</span></div>
-                    <div className="language"><img src={typescriptIcon} alt="" /><span>TypeScript</span></div>
-                    <div className="language"><img src={sassIcon} alt="" /><span>Sass</span></div>
-                    <div className="language"><img src={bootstrapIcon} alt="" /><span>Bootstrap</span></div>
-                    <div className="language"><img src={gitIcon} alt="" /><span>Git</span></div>
-                    <div className="language"><img src={webAccessibilityIcon} alt="" /><span>Web Accessibility</span></div>
+                    <AnimatedDiv elementClassName="language"><img src={htmlIcon} alt="" /><span>HTML5</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={cssIcon} alt="" /><span>CSS3</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={javascriptIcon} alt="" /><span>JavaScript</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={reactIcon} alt="" /><span>React</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={reduxIcon} alt="" /><span>Redux</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={typescriptIcon} alt="" /><span>TypeScript</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={sassIcon} alt="" /><span>Sass</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={bootstrapIcon} alt="" /><span>Bootstrap</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={gitIcon} alt="" /><span>Git</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={webAccessibilityIcon} alt="" /><span>Web Accessibility</span></AnimatedDiv>
                 </div>
             </div>
         </section>

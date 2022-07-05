@@ -1,11 +1,27 @@
 import React from 'react';
+import Particles from 'react-tsparticles';
+import particlesConfig from '../config/configParticles';
+import { tsParticles } from "tsparticles-engine";
+import { loadFull } from 'tsparticles';
 import '../scss/components/projects-section.scss';
 import Project from './Project';
 
 function Projects() {
+  tsParticles.load("tsparticles-2", particlesConfig);
+
+  const particlesInit = async (main) => {
+    await loadFull(main);
+  };
+
   return (
     <section className="section projects-section" id="projects">
       <div className="section-decoration"></div>
+      <Particles 
+            className="animated-background" 
+            id="tsparticles-2"
+            init={particlesInit}
+            options={particlesConfig} 
+      />
       <h1 className="section-heading">Projects</h1>
       <div className="projects-section__grid-container center-content">
         <Project
@@ -46,7 +62,7 @@ function Projects() {
         <Project
           name='Batata Bit'
           stack={['HTML5', 'Sass']}
-          description='BatataBit is a crypto currency website. It consists of a fully responsive static layout that follows the Web Content Accessibility Guidelines (WCAG) 2.1.'
+          description='Batata Bit is a crypto currency website. It consists of a fully responsive static layout that follows the Web Content Accessibility Guidelines (WCAG) 2.1.'
           iconClassName='batata-bit-icon'
           route=''
           left={true}

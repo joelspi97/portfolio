@@ -2,58 +2,56 @@
 @import '../abstracts/mixins/icon.scss';
 
 .header {
-    z-index: 3;
     box-shadow: none;
     background-color: $dark-blue;
     color: $portfolio-white;
-
+    overflow: hidden;
+    z-index: 3;
+    
     &.section {
         padding-top: 4rem;
     }
 
     &__nav {
-        width: 100%;
-        max-width: 120rem;
-        margin-top: -1rem;
         margin-bottom: 1.5rem;
-        font-size: 1.85rem;
-        font-weight: 600;
+        margin-top: -1rem;
+        margin-left: auto;
         text-align: end;
 
         label {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
             cursor: pointer;
-            -webkit-tap-highlight-color:  rgba(0, 0, 0, 0);
             display: inline-block;
             font-size: 2.2rem;
             margin-bottom: 1rem;
 
             /* HAMBURGER MENU */
             .menu-btn {
-                position: relative;
-                display: flex;
-                justify-content: center;
                 align-items: center;
-                width: 2rem;
-                height: 2rem;
                 cursor: pointer;
+                display: flex;
+                height: 2rem;
+                justify-content: center;
+                position: relative;
                 transition: all 300ms ease-in-out;
+                width: 2rem;
 
                 &__burger {
-                    width: 2rem;
-                    height: 0.2rem;
                     background-color: white;
                     border-radius: 0.2rem;
+                    height: 0.2rem;
                     transition: all 300ms ease-in-out;
+                    width: 2rem;
                 }
 
                 .menu-btn__burger::before, .menu-btn__burger::after {
-                    content: "";
-                    position: absolute;
-                    width: 2rem;
-                    height: 0.2rem;
                     background-color: white;
                     border-radius: 0.5rem;
+                    content: "";
+                    height: 0.2rem;
+                    position: absolute;
                     transition: all 300ms ease-in-out;
+                    width: 2rem;
                 }
 
                 .menu-btn__burger::before {
@@ -91,27 +89,29 @@
         }
 
         .menu {
-            background-color: $dark-blue;
-            left: calc(100% - 13.7rem);
             opacity: 0;
             position: absolute;
+            right: 2rem;
             text-align: center;
             transition: background-color 0.15s ease-in-out,
                         color 0.15s ease-in-out;
             visibility: hidden;
 
-            a {
+            .nav-link {
+                background-color: $dark-blue;
                 border: 0.1rem solid $portfolio-white;
                 color: $portfolio-white;
                 display: block;
+                font-size: 1.85rem;
+                font-weight: 600;
                 padding: 1rem;
                 text-decoration: none;
                 transition: background-color 0.15s ease-in-out,
                             color 0.15s ease-in-out;
             }
 
-            a:hover,
-            a:focus {
+            .nav-link:hover,
+            .nav-link:focus {
                 background-color: $portfolio-white;
                 color: $dark-blue;
                 outline: none;
@@ -119,23 +119,17 @@
         }
     }
 
-    &__content-container {
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 4rem;
-            margin-top: 5rem; 
-        }
-        
-        img {
-            border-radius: 25rem;
-            max-width: 35rem;
-            width: 100%;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-        }
+    h1 {
+        background-color: $dark-blue;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+        margin-top: 5rem; 
+    }
+    
+    img {
+        border-radius: 25rem;
+        max-width: 35rem;
+        width: 100%;
     }
 }
 
@@ -144,23 +138,23 @@
         &__nav {
             display: flex;
             justify-content: center;
+            margin-left: 0;
+            width: 100%;
 
             #toggle:checked + .menu {
-                visibility: visible;
                 opacity: 1;
+                visibility: visible;
             }
 
             .menu {
-                visibility: visible;
-                opacity: 1;
-                position: static;
                 display: flex;
                 justify-content: space-around;
-                margin-bottom: 1rem;
+                opacity: 1;
+                position: static;
+                visibility: visible;
                 width: 100%;
-                max-width: 80rem;
 
-                a {
+                .nav-link {
                     border-radius: 0.5rem;
                     display: inline-block;
                 }
@@ -187,8 +181,13 @@
             .menu {
                 justify-content: flex-end;
 
-                a {
+                .nav-link {
                     margin-left: 2rem;
+                }
+
+                button.nav-link {
+                    margin-left: 0;
+                    margin-right: auto;
                 }
             }
         }

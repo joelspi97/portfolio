@@ -7,7 +7,8 @@ function Project(props) {
             stack,
             description,
             iconClassName,
-            route,
+            demoUrl,
+            repositoryUrl,
             left,
             children } = props;
 
@@ -59,24 +60,36 @@ function Project(props) {
             {
                 children && (
                     <button
-                        aria-label={ showMore ? `Show less information about the ${ name } project.` : `Read more information about the ${ name } project.` }
+                        aria-label={ showMore ? `Show less information about the ${ name } project.` : `Show more information about the ${ name } project.` }
                         className="project__button project__button--show-more" 
                         onClick={() => setShowMore(prevValue => !prevValue)}
                         type="button"
                     >
-                        { showMore ? 'Show less' : 'Read more' }
+                        { showMore ? 'Show less' : 'Show more' }
                     </button>
                 )
             }
 
-            <a 
-                className="project__button" 
-                href="../projects/batata-bit/index.html" 
-                target="_blank" 
-                aria-label={`Go to the ${ name } project webpage.`}
-            >
-                View project <span className="arrow-icon"></span>
-            </a>
+            <div className="project__link-wrapper">
+                <a 
+                    className="project__button project__button--repository" 
+                    href={ repositoryUrl } 
+                    target="_blank" 
+                    aria-label={`Go to the ${ name } project Github repository.`}
+                    title={`Visit ${ name } Github repository`}
+                >
+                    View code <span className="development-icon"></span>
+                </a>
+
+                <a 
+                    className="project__button" 
+                    href={ demoUrl } 
+                    target="_blank" 
+                    aria-label={`Go to the ${ name } project webpage.`}
+                >
+                    View project <span className="arrow-icon"></span>
+                </a>
+            </div>
         </AnimatedArticle>
     );
 }

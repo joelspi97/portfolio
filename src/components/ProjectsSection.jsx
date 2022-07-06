@@ -13,7 +13,8 @@ function Projects() {
           stack={['React', 'TypeScript', 'Redux (+Thunk)', 'Bootstrap', 'Sass']}
           description='Movie Finder is a platform that lets user search for information about any movie they want. It also allows them to rate them using their TMDb account.'
           iconClassName='movie-finder-icon'
-          route=''
+          demoUrl='#'
+          repositoryUrl='https://github.com/joelspi97/movie-finder'
           left={true}
         >
           <ol>
@@ -29,7 +30,8 @@ function Projects() {
           stack={['React', 'Redux', 'Sass']}
           description='To-do List is a web application that allows users to make their own list of chores, and arrenge their tasks as they wish.'
           iconClassName='to-do-list-icon'
-          route=''
+          demoUrl='#'
+          repositoryUrl='https://github.com/joelspi97/To-do-List'
           left={false}
         >
           <ol>
@@ -48,7 +50,8 @@ function Projects() {
           stack={['HTML5', 'Sass']}
           description='Batata Bit is a crypto currency website. It consists of a fully responsive static layout that follows the Web Content Accessibility Guidelines (WCAG) 2.1.'
           iconClassName='batata-bit-icon'
-          route=''
+          demoUrl='#'
+          repositoryUrl='#'
           left={true}
         />
 
@@ -57,7 +60,8 @@ function Projects() {
           stack={['HTML5', 'CSS3']}
           description='MI Blog is a generic blog website. It consists of a fully responsive static layout that follows the Web Content Accessibility Guidelines (WCAG) 2.1.'
           iconClassName='generic-blog-icon'
-          route=''
+          demoUrl='#'
+          repositoryUrl='#'
           left={false}
         />
       </div>

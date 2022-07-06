@@ -5,6 +5,7 @@ import { tsParticles } from "tsparticles-engine";
 import { loadFull } from 'tsparticles';
 import AnimatedDiv from './AnimatedDiv';
 import '../scss/components/header.scss';
+import profilePicture from '../assets/profile-picture.jpg';
 
 function Header() {
     tsParticles.load("tsparticles", particlesConfig);
@@ -50,9 +51,14 @@ function Header() {
                     </nav>
                 </div>
             </AnimatedDiv>
-            <AnimatedDiv elementClassName="header__heading-container center-content">
-                <h1 className="section-heading"><span>Front-end development</span> &amp; <span>Web Accessibility</span></h1>
-            </AnimatedDiv>
+            <div className="header__heading-container center-content">
+                <AnimatedDiv>
+                    <h1 className="section-heading"><span>Front-end development</span> &amp; <span>Web Accessibility</span></h1>
+                </AnimatedDiv>
+                <AnimatedDiv>
+                    <img src={profilePicture} alt="" />
+                </AnimatedDiv> 
+            </div>
         </header>
     );
 }

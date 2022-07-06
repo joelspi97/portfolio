@@ -19,8 +19,8 @@ function App() {
       </main>
       <footer className="footer">
         <AnimatedDiv>
-          <p>Made by Joel Spinelli with <span aria-label="love">❤️️</span> and <span aria-label="porcine power">🐷</span></p>
           <p>Want to see the code of this website? <a href="https://github.com/joelspi97/portfolio" target="_blank" rel="noreferrer" aria-label="Visit this website Github repository." title="Visit this website Github repository">Click here!</a></p>
+          <p>Made by Joel Spinelli with <span aria-label="love">❤️️</span> and <span aria-label="porcine power">🐷</span></p>
         </AnimatedDiv>
       </footer>
     </>

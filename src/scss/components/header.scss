@@ -5,13 +5,13 @@
     box-shadow: none;
     background-color: $dark-blue;
     color: $portfolio-white;
-    min-height: 90vh;
+    min-height: 97vh;
     overflow: hidden;
     z-index: 3;
     
     &.section {
         justify-content: unset;
-        padding-bottom: 0;
+        padding-bottom: 4rem;
         padding-top: 3rem;
     }
 
@@ -116,12 +116,14 @@
     &__heading-container {
         align-items: center;
         display: flex;
+        flex-direction: column;
         flex-grow: 1;
+        justify-content: center;
     
         h1 {
             background-color: $dark-blue;
             font-size: 3rem;
-            margin-bottom: 11rem;
+            margin-bottom: 4rem;
 
             span {
                 &:first-of-type {
@@ -138,7 +140,7 @@
     img {
         border-radius: 25rem;
         max-width: 35rem;
-        width: 100%;
+        width: 90%;
     }
 }
 

@@ -13,10 +13,13 @@
 
         &:first-of-type {
             margin-bottom: 1rem;
+            padding: 0 2rem;
         }
     }
 
     a {
+        white-space: nowrap;
+
         &:focus {
             border-radius: 0.25rem;
             outline: 0.2rem solid $dark-blue;

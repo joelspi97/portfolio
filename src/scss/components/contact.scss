@@ -4,13 +4,28 @@
 .contact {
     background-color: $portfolio-white;
     color: $dark-blue;
+    overflow: hidden;
 
     &.section {
         padding-bottom: 0;
     }
 
+    .section-decoration--left,
+    .section-decoration--right {
+        bottom: calc(28% - 4.5rem);
+        display: none;
+    }
+
+    .section-decoration--left {
+        right: calc(100% - 4.5rem);
+    }
+    
+    .section-decoration--right {
+        left: calc(100% - 4.5rem);
+    }
+
     h1 {
-        margin-bottom: 2.5rem;
+        margin-bottom: 3.5rem;
     }
 
     &__image-container {
@@ -28,7 +43,7 @@
     &__links-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 2rem;
         justify-content: space-evenly;
         margin-bottom: 6rem;
         max-width: 70rem;
@@ -46,7 +61,7 @@
             text-align: center;
             text-decoration: none;
             transition: background-color 200ms ease-in-out;
-            width: 18rem;
+            width: fit-content;
 
             span {
                 border-radius: 50%;
@@ -75,6 +90,21 @@
             }
         }
 
+    }
+}
+
+@media only screen and (min-width: 530px) {
+    .contact {
+        .section-decoration--left,
+        .section-decoration--right {
+            display: block;
+        }
+
+        &__links-container {
+            a {
+                width: 18rem;
+            }
+        }
     }
 }
 

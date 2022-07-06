@@ -44,17 +44,20 @@
         .language-wrapper {
             display: grid;
             gap: 6rem;
-            grid-template-columns: repeat(auto-fill, minmax(10rem, 19.7rem));
+            grid-template-columns: 1fr;
             justify-content: center;
             justify-items: center;
-            margin-top: 2.5rem;
+            margin-top: 3rem;
 
             .language {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
                 width: 10rem;
 
                 img {
                     margin-bottom: 1rem;
-                    width: 100%;
+                    width: 70%;
                 }
 
                 span {
@@ -66,13 +69,35 @@
     }
 }
 
+@media only screen and (min-width: 310px) {
+    .about-me {
+        .language-wrapper {
+            grid-template-columns: 1fr 1fr;
+        }  
+    }
+}
+
+@media only screen and (min-width: 560px) {
+    .about-me {
+        .language-wrapper {
+            grid-template-columns: repeat(auto-fill, minmax(10rem, 19.7rem));
+
+            .language {
+                img {
+                    width: 100%;
+                }
+            }
+        }  
+    }
+}
+
 @media only screen and (min-width: 600px) {
     .about-me {
         &__image-container {
             img {
                 width: 16rem;
             }
-        }    
+        }  
     }
 }
 
@@ -107,26 +132,7 @@
             }
     
             .language-wrapper {
-                display: grid;
-                gap: 6rem;
                 grid-template-columns: repeat(auto-fill, minmax(10rem, 17rem));
-                justify-content: center;
-                justify-items: center;
-                margin-top: 2.5rem;
-    
-                .language {
-                    width: 10rem;
-    
-                    img {
-                        margin-bottom: 1rem;
-                        width: 100%;
-                    }
-    
-                    span {
-                        font-size: 1.85rem;
-                        font-weight: 600;
-                    }
-                }
             }
         }
     }

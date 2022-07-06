@@ -1,17 +1,15 @@
 import React from 'react';
 import AnimatedDiv from './AnimatedDiv';
 import '../scss/components/contact.scss';
-import profilePicture from '../assets/profile-picture.jpg';
 
 function Contact() {
   return (
     <section className="contact section" id="contact">
       <div className="section-decoration"></div>
+      <div className="section-decoration section-decoration--left"></div>
+      <div className="section-decoration section-decoration--right"></div>
         <AnimatedDiv>
           <h1 className="section-heading">Get in touch!</h1>
-        </AnimatedDiv>
-        <AnimatedDiv elementClassName="contact__image-container center-content">
-            <img src={profilePicture} alt="" />
         </AnimatedDiv>
         <AnimatedDiv elementClassName="contact__links-container">
             <a href="https://www.linkedin.com/in/joel-spinelli-497a1418b/" title="Visit my LinkedIn profile" target="_blank"

@@ -1,27 +1,11 @@
 import React from 'react';
-import Particles from 'react-tsparticles';
-import particlesConfig from '../config/configParticles';
-import { tsParticles } from "tsparticles-engine";
-import { loadFull } from 'tsparticles';
 import '../scss/components/projects-section.scss';
 import Project from './Project';
 
 function Projects() {
-  tsParticles.load("tsparticles-2", particlesConfig);
-
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
-
   return (
     <section className="section projects-section" id="projects">
       <div className="section-decoration"></div>
-      <Particles 
-            className="animated-background" 
-            id="tsparticles-2"
-            init={particlesInit}
-            options={particlesConfig} 
-      />
       <h1 className="section-heading">Projects</h1>
       <div className="projects-section__grid-container center-content">
         <Project

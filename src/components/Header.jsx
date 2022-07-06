@@ -5,7 +5,6 @@ import { tsParticles } from "tsparticles-engine";
 import { loadFull } from 'tsparticles';
 import AnimatedDiv from './AnimatedDiv';
 import '../scss/components/header.scss';
-import profilePicture from '../assets/profile-picture.jpg';
 
 function Header() {
     tsParticles.load("tsparticles", particlesConfig);
@@ -16,15 +15,12 @@ function Header() {
 
     let enableAnimations = true;
     function pauseAnimations() {
-        const animations = [tsParticles.domItem(0), tsParticles.domItem(1)];
+        const animations = tsParticles.domItem(0);
+
         if (!enableAnimations) {
-            animations.forEach(a => {
-                a.play();
-            });
+            animations.play();
         } else {
-            animations.forEach(a => {
-                a.pause();
-            });
+            animations.pause();
         }
 
         enableAnimations = !enableAnimations;
@@ -46,7 +42,7 @@ function Header() {
                 </label>
                 <input type="checkbox" id="toggle" />
                 <div className="menu">
-                    <button className="nav-link" type="button" onClick={pauseAnimations}>Pause animations</button>
+                    <button className="nav-link" type="button" onClick={pauseAnimations}>Pause animation</button>
                     <nav>
                         <a className="nav-link" href="#about-me">About me</a>
                         <a className="nav-link" href="#projects">Projects</a>
@@ -54,11 +50,8 @@ function Header() {
                     </nav>
                 </div>
             </AnimatedDiv>
-            <AnimatedDiv elementClassName="header__content-container center-content">
-                <h1 className="section-heading">Front-end development &amp; Web Accessibility</h1>
-            </AnimatedDiv>
-            <AnimatedDiv>
-                <img src={profilePicture} alt="" />
+            <AnimatedDiv elementClassName="header__heading-container center-content">
+                <h1 className="section-heading"><span>Front-end development</span> &amp; <span>Web Accessibility</span></h1>
             </AnimatedDiv>
         </header>
     );

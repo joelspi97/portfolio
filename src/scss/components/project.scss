@@ -116,16 +116,11 @@
 
         &:hover,
         &:focus-visible {
-            background-color: $blue;
+            background-color: $purple;
         }
 
         &--repository {
             background-color: $blue;
-
-            &:hover,
-            &:focus-visible {
-                background-color: $dark-green;
-            }
         }
 
         &--show-more {

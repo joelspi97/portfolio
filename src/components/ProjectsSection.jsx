@@ -51,7 +51,7 @@ function Projects() {
           description='Batata Bit is a crypto currency website. It consists of a fully responsive static layout that follows the Web Content Accessibility Guidelines (WCAG) 2.1.'
           iconClassName='batata-bit-icon'
           demoUrl='#'
-          repositoryUrl='#'
+          repositoryUrl='https://github.com/joelspi97/batata-bit'
           left={true}
         />
 
@@ -61,7 +61,7 @@ function Projects() {
           description='MI Blog is a generic blog website. It consists of a fully responsive static layout that follows the Web Content Accessibility Guidelines (WCAG) 2.1.'
           iconClassName='generic-blog-icon'
           demoUrl='#'
-          repositoryUrl='#'
+          repositoryUrl='https://github.com/joelspi97/MI-blog'
           left={false}
         />
       </div>

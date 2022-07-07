@@ -110,12 +110,12 @@
                     color 0.15s ease-in-out;
         white-space: nowrap;
     
-        &:focus {
+        &:focus-visible {
             outline: 0.2rem solid $dark-blue;
         }
 
         &:hover,
-        &:focus {
+        &:focus-visible {
             background-color: $blue;
         }
 
@@ -123,7 +123,7 @@
             background-color: $blue;
 
             &:hover,
-            &:focus {
+            &:focus-visible {
                 background-color: $dark-green;
             }
         }
@@ -141,7 +141,7 @@
             padding: 0.8rem;
 
             &:hover,
-            &:focus {
+            &:focus-visible {
                 background-color: $portfolio-white;
                 border-color: $dark-green;
                 color: $dark-green;

@@ -12,16 +12,34 @@ function Contact() {
           <h1 className="section-heading">Get in touch!</h1>
         </AnimatedDiv>
         <AnimatedDiv elementClassName="contact__links-container">
-            <a href="https://www.linkedin.com/in/joel-spinelli-497a1418b/" title="Visit my LinkedIn profile" target="_blank"
-                rel="noreferrer" aria-label="Visit my LinkedIn profile.">
-                <span className="linkedin-icon"></span>
-                LinkedIn
+            <a 
+              href="https://www.linkedin.com/in/joel-spinelli-497a1418b/" 
+              title="Visit my LinkedIn profile" 
+              target="_blank"
+              rel="noreferrer" 
+              aria-label="Visit my LinkedIn profile."
+              className="focusable"
+            >
+              <span className="linkedin-icon"></span>
+              LinkedIn
             </a>
-            <a href="https://github.com/joelspi97" title="Visit my Github profile" target="_blank" rel="noreferrer" aria-label="Visit my GitHub profile.">
-                <span className="github-icon"></span>
-                GitHub
+            <a 
+              href="https://github.com/joelspi97" 
+              title="Visit my Github profile" 
+              target="_blank" 
+              rel="noreferrer" 
+              aria-label="Visit my GitHub profile."
+              className="focusable"
+            >
+              <span className="github-icon"></span>
+              GitHub
             </a>
-            <a href="mailto:joelspi97@gmail.com" title="Send me an email" rel="noreferrer">
+            <a 
+              href="mailto:joelspi97@gmail.com" 
+              title="Send me an email" 
+              rel="noreferrer"
+              className="focusable"
+            >
                 <span className="mail-icon"></span>
                 Send me an email!
             </a>

@@ -4,6 +4,7 @@ import particlesConfig from '../config/configParticles';
 import { tsParticles } from "tsparticles-engine";
 import { loadFull } from 'tsparticles';
 import AnimatedDiv from './AnimatedDiv';
+import NavigationBar from './NavigationBar';
 import '../scss/components/header.scss';
 import profilePicture from '../assets/profile-picture.jpg';
 
@@ -35,21 +36,9 @@ function Header() {
                 init={particlesInit}
                 options={particlesConfig}
             />
-            <AnimatedDiv elementClassName="header__wrapper">
-                <label htmlFor="toggle">
-                    <nav className="menu-btn" tabIndex="0" aria-label="Open menu">
-                        <div className="menu-btn__burger"></div>
-                    </nav>
-                </label>
-                <input type="checkbox" id="toggle" />
-                <div className="menu">
-                    <button className="nav-link" type="button" onClick={pauseAnimations}>Pause animation</button>
-                    <nav>
-                        <a className="nav-link" href="#about-me">About me</a>
-                        <a className="nav-link" href="#projects">Projects</a>
-                        <a className="nav-link" href="#contact">Contact</a>
-                    </nav>
-                </div>
+            <AnimatedDiv elementClassName="header__menu">
+                <button className="animation-btn nav-link focusable" type="button" onClick={pauseAnimations}>Pause animation</button>
+                <NavigationBar />
             </AnimatedDiv>
             <div className="header__heading-container center-content">
                 <AnimatedDiv>

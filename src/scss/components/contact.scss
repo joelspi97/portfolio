@@ -80,12 +80,12 @@
                 @include icon(8rem, 8rem, "../../assets/icons/mail_icon.png");
             }
 
-            &:focus {
+            &:focus-visible {
                 outline: 0.2rem solid $dark-blue;
             }
 
             &:hover span,
-            &:focus span {
+            &:focus-visible span {
                 background-color: $yellow;
             }
         }

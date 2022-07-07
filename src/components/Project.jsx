@@ -61,7 +61,7 @@ function Project(props) {
                 children && (
                     <button
                         aria-label={ showMore ? `Show less information about the ${ name } project.` : `Show more information about the ${ name } project.` }
-                        className="project__button project__button--show-more" 
+                        className="project__button project__button--show-more focusable" 
                         onClick={() => setShowMore(prevValue => !prevValue)}
                         type="button"
                     >
@@ -72,20 +72,22 @@ function Project(props) {
 
             <div className="project__link-wrapper">
                 <a 
-                    className="project__button project__button--repository" 
+                    className="project__button project__button--repository focusable" 
                     href={ repositoryUrl } 
                     target="_blank" 
                     aria-label={`Go to the ${ name } project Github repository.`}
                     title={`Visit ${ name } Github repository`}
+                    rel="noreferrer"
                 >
                     View code <span className="development-icon"></span>
                 </a>
 
                 <a 
-                    className="project__button" 
+                    className="project__button focusable" 
                     href={ demoUrl } 
                     target="_blank" 
                     aria-label={`Go to the ${ name } project webpage.`}
+                    rel="noreferrer"
                 >
                     View project <span className="arrow-icon"></span>
                 </a>

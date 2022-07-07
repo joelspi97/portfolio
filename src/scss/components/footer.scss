@@ -20,7 +20,7 @@
     a {
         white-space: nowrap;
 
-        &:focus {
+        &:focus-visible {
             border-radius: 0.25rem;
             outline: 0.2rem solid $dark-blue;
         }

@@ -108,7 +108,8 @@ let particlesConfig = {
   },
   "detectRetina": true,
   "fullScreen": false,
-  "pauseOnOutsideViewport": false
+  "pauseOnOutsideViewport": false,
+  "fpsLimit": 35
 }
 
 export default particlesConfig;

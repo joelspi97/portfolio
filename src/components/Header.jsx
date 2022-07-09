@@ -45,7 +45,7 @@ function Header() {
                     <h1 className="section-heading"><span>Front-end development</span> &amp; <span>Web Accessibility</span></h1>
                 </AnimatedDiv>
                 <AnimatedDiv>
-                    <img src={profilePicture} alt="" />
+                    <img src={profilePicture} alt="Joel Spinelli, front-end developer, coding in his laptop." />
                 </AnimatedDiv> 
             </div>
         </header>

@@ -22,9 +22,14 @@ function AboutMe() {
             <AnimatedDiv elementClassName="about-me__text-container center-content">
                 <p>I'm a Front-end developer with a passion for web accessibility.</p>
                 <p>
-                    Currently working for the development team of the Goverment of the Province of Buenos Aires
+                    I've been working for the development team of the Goverment of the Province of Buenos Aires for over a year. 
                     <br />
-                    and have worked for the National University of Technology of Buenos Aires before.
+                    I also worked for the National University of Technology of Buenos Aires before.
+                </p>
+                <p>
+                  I've learned to program websites in a self-taught way, by following multiple courses from 
+                  {' '} <a className="simple-link focusable" href="https://platzi.com/p/joelspinelli/" target="_blank" rel="noopener">Platzi</a> and 
+                  {' '} <a className="simple-link focusable" href="https://www.linkedin.com/learning/" target="_blank" rel="noopener">LinkedIn</a>.
                 </p>
                 <p>My goal is to make every website I work on fully responsive, pixel perfect and accessible.</p>
             </AnimatedDiv>

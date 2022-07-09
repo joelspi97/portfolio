@@ -2,80 +2,80 @@
 @import '../abstracts/mixins/icon.scss';
 
 .header {
-    box-shadow: none;
-    background-color: $dark-blue;
-    color: $portfolio-white;
-    min-height: 100vh;
-    overflow: hidden;
-    z-index: 3;
-    
-    &.section {
-        justify-content: unset;
-        padding-bottom: 4rem;
-        padding-top: 3rem;
-    }
+  background-color: $dark-blue;
+  box-shadow: none;
+  color: $portfolio-white;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 3;
 
-    &__menu {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 3rem;
-        width: 100%;
-    }
+  &.section {
+    justify-content: unset;
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+  }
 
-    &__heading-container {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        justify-content: center;
-    
-        h1 {
-            background-color: $dark-blue;
-            font-size: 3rem;
-            margin-bottom: 4rem;
+  &__menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
 
-            span {
-                &:first-of-type {
-                    color: $light-blue;
-                }
-    
-                &:last-of-type {
-                    color: $light-green;
-                }
-            }
+  &__heading-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+
+    h1 {
+      background-color: $dark-blue;
+      font-size: 3rem;
+      margin-bottom: 4rem;
+
+      span {
+        &:first-of-type {
+          color: $light-blue;
         }
+
+        &:last-of-type {
+          color: $light-green;
+        }
+      }
     }
-    
-    img {
-        border-radius: 25rem;
-        max-width: 35rem;
-        width: 90%;
-    }
+  }
+
+  img {
+    border-radius: 25rem;
+    max-width: 45rem;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-    .header {
-        &__heading-container {
-            h1 {
-                font-size: 3.5rem;
-            }
-        }
+  .header {
+    &__heading-container {
+      h1 {
+        font-size: 3.5rem;
+      }
     }
+  }
 }
 
 @media only screen and (min-width: 900px) {
-    .header {
-        &__menu {
-            .nav-link {
-                font-size: 1.85rem;
-            }
-        }
-
-        &__heading-container {
-            h1 {
-                font-size: 4rem;
-            }
-        }
+  .header {
+    &__menu {
+      .nav-link {
+        font-size: 1.85rem;
+      }
     }
+
+    &__heading-container {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
 }

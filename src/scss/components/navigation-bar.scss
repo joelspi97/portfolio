@@ -4,7 +4,7 @@
 .nav {
   display: flex;
   justify-content: space-around;
-  
+
   .hamburger-menu {
     align-items: center;
     background-color: $dark-blue;
@@ -18,9 +18,9 @@
     width: 3rem;
 
     &:focus-visible {
-        outline: 0.2rem solid $portfolio-white;
-        outline-offset: 0.3rem;
-    } 
+      outline: 0.2rem solid $portfolio-white;
+      outline-offset: 0.3rem;
+    }
 
     .hamburger-icon {
       background-color: white;
@@ -30,21 +30,21 @@
 
       &::before,
       &::after {
-          background-color: white;
-          border-radius: 0.5rem;
-          content: "";
-          height: 0.25rem;
-          position: absolute;
-          transition: all 300ms ease-in-out;
-          width: 3rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        content: "";
+        height: 0.25rem;
+        position: absolute;
+        transition: all 300ms ease-in-out;
+        width: 3rem;
       }
 
       &::before {
-          transform: translate(-1.5rem, -1rem); 
+        transform: translate(-1.5rem, -1rem);
       }
 
       &::after {
-          transform: translate(-1.5rem, 1rem);  
+        transform: translate(-1.5rem, 1rem);
       }
     }
   }
@@ -71,7 +71,7 @@
     text-align: center;
     top: 0%;
     transition: background-color 0.15s ease-in-out,
-                color 0.15s ease-in-out;
+      color 0.15s ease-in-out;
     width: 50vw;
 
     .close-btn {
@@ -80,7 +80,7 @@
       border: none;
       border-radius: 0.5rem;
       cursor: pointer;
-      filter:  brightness(0) invert(1);
+      filter: brightness(0) invert(1);
       margin-bottom: 5rem;
       margin-left: auto;
 
@@ -98,7 +98,7 @@
 @media only screen and (min-width: 600px) {
   .nav {
     .hamburger-menu {
-        display: none;
+      display: none;
     }
 
     &__link-wrapper {
@@ -115,14 +115,10 @@
         margin-bottom: 0;
         margin-left: 2rem;
       }
-      
+
       & a:first-of-type {
-          margin-left: 0;
+        margin-left: 0;
       }
     }
   }
 }
-
-// Agregar backdrop, que no se pueda hacer scroll, que se pueda cerrar con escape o haciendo click en el backdrop.
-// Hacerlo accesible, que cuando se muestre solo se pueda focusear dentro del mismo, que se actualicen los aria-labels
-// que cambie el icono de menu de hamburguesa por una X.

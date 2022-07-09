@@ -29,10 +29,12 @@ function NavigationBar() {
   }
   
   function closeMenu(e) {
-    if (e.target.className === 'backdrop' | e.target.className ===  'nav-link') {
-      setOpenMenu(false);
-      setBackdrop(false);
-      bodyElement.classList.remove('no-scroll');
+    if (backdrop) {
+      if (e.target.className === 'backdrop' | e.target.className === 'nav-link') {
+        setOpenMenu(false);
+        setBackdrop(false);
+        bodyElement.classList.remove('no-scroll');
+      }
     }
   }
   

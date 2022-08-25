@@ -19,6 +19,7 @@ function NavigationBar() {
     } else {
       setOpenMenu(false);
     }
+    // eslint-disable-next-line
   }, [windowWidth]);
   
   function handleButton() {
@@ -64,6 +65,7 @@ function NavigationBar() {
       document.removeEventListener('click', closeMenu);
       document.removeEventListener('keydown', closeMenuWithKeyboard);
     }
+    // eslint-disable-next-line
   }, [backdrop]);
 
   return (

@@ -20,7 +20,7 @@ function AboutMe() {
                 <h1 className="section-heading">Hello, my name is <span>Joel Spinelli</span>.</h1>
             </AnimatedDiv>
             <AnimatedDiv elementClassName="about-me__text-container center-content">
-                <p>I'm a Front-end developer with a passion for web accessibility.</p>
+                <p>I'm a Front-end developer with a passion for web technologies.</p>
                 <p>
                     I've been working for the development team of the Goverment of the Province of Buenos Aires for over a year. 
                     <br />

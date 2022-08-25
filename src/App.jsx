@@ -20,7 +20,7 @@ function App() {
       <footer className="footer">
         <AnimatedDiv>
           <p>Want to see the code of this website? <a className="simple-link focusable" href="https://github.com/joelspi97/portfolio" target="_blank" rel="noreferrer" aria-label="Visit this website Github repository." title="Visit this website Github repository">Click here!</a></p>
-          <p>Made by Joel Spinelli with <span aria-label="love">❤️️</span> and <span aria-label="porcine power">🐷</span></p>
+          <p>Made with <span aria-label="love">❤️️</span> by Joel Spinelli.</p>
         </AnimatedDiv>
       </footer>
     </>

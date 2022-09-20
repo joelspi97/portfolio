@@ -30,12 +30,12 @@ function NavigationBar() {
   }
   
   function closeMenu(e) {
-    if (backdrop) {
-      if (e.target.className === 'backdrop' | e.target.className === 'nav-link') {
-        setOpenMenu(false);
-        setBackdrop(false);
-        bodyElement.classList.remove('no-scroll');
-      }
+    if (!backdrop) return;
+
+    if (e.target.className === 'backdrop' | e.target.className === 'portfolio-btn') {
+      setOpenMenu(false);
+      setBackdrop(false);
+      bodyElement.classList.remove('no-scroll');
     }
   }
   
@@ -97,9 +97,9 @@ function NavigationBar() {
                 </button>
               )
             }
-            <a className="nav-link" href="#about-me">About me</a>
-            <a className="nav-link" href="#projects">Projects</a>
-            <a className="nav-link" href="#contact">Contact</a>
+            <a className="portfolio-btn" href="#about-me">About me</a>
+            <a className="portfolio-btn" href="#projects">Projects</a>
+            <a className="portfolio-btn" href="#contact">Contact</a>
           </div>
         )
       }

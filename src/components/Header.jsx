@@ -37,12 +37,12 @@ function Header() {
                 options={particlesConfig}
             />
             <AnimatedDiv elementClassName="header__menu">
-                <button className="animation-btn nav-link focusable" type="button" onClick={pauseAnimations}>Pause animation</button>
+                <button className="animation-btn portfolio-btn focusable" type="button" onClick={pauseAnimations}>Pause animation</button>
                 <NavigationBar />
             </AnimatedDiv>
             <div className="header__heading-container center-content">
                 <AnimatedDiv>
-                    <h1 className="section-heading"><span>Front-end</span> <span>development</span></h1>
+                    <h1 className="section-heading"><span>Full-stack</span> <span>development</span></h1>
                 </AnimatedDiv>
                 <AnimatedDiv>
                     <img src={profilePicture} alt="Joel Spinelli, front-end developer, coding in his laptop." />

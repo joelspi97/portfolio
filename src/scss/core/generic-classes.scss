@@ -50,7 +50,7 @@
   z-index: -1;
 }
 
-.nav-link {
+.portfolio-btn {
   background-color: $dark-blue;
   border: 0.1rem solid $portfolio-white;
   border-radius: 0.5rem;
@@ -61,7 +61,7 @@
   padding: 1rem;
   text-decoration: none;
   transition: background-color 0.15s ease-in-out,
-    color 0.15s ease-in-out;
+              color 0.15s ease-in-out;
 
   &:hover,
   &:focus-visible {
@@ -89,4 +89,12 @@
     outline: 0.2rem solid $dark-blue;
     outline-offset: 0.2rem;
   }
+}
+
+.portfolio-input {
+  border: 0.1rem solid $dark-blue;
+  border-radius: 0.25rem;
+  font-size: 1.6rem;
+  margin-bottom: 2.2rem;
+  padding: 0.7rem 1rem;
 }

@@ -12,7 +12,7 @@
 
   .section-decoration--left,
   .section-decoration--right {
-    bottom: calc(28% - 4.5rem);
+    bottom: calc(40% - 4.5rem);
     display: none;
   }
 
@@ -25,18 +25,37 @@
   }
 
   h1 {
-    margin-bottom: 3.5rem;
+    margin-bottom: 5rem;
   }
 
-  &__image-container {
-    margin-bottom: 2.5rem;
+  &__form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
     width: 100%;
 
-    img {
-      border-radius: 25rem;
-      max-width: 30rem;
-      min-width: 21rem;
+    .contact__form {
+      display: flex;
+      flex-direction: column;
+      max-width: 70rem;
       width: 90%;
+
+      label {
+        font-size: 1.85rem;
+        font-weight: 600;
+        margin-bottom: 0.7rem;
+        text-align: start;
+        width: fit-content;
+      }
+
+      textarea.portfolio-input {
+        min-height: 5.1rem;
+        resize: vertical;
+      }
+
+      .portfolio-btn {
+        border: 0.2rem solid $dark-blue;
+      }
     }
   }
 
@@ -45,7 +64,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: space-evenly;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     max-width: 70rem;
     width: 80%;
 
@@ -95,7 +114,6 @@
 
 @media only screen and (min-width: 530px) {
   .contact {
-
     .section-decoration--left,
     .section-decoration--right {
       display: block;
@@ -104,6 +122,12 @@
     &__links-container {
       a {
         width: 18rem;
+      }
+    }
+
+    &__form-wrapper {
+      .contact__form {
+        width: 70%;
       }
     }
   }

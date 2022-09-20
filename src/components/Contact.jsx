@@ -11,6 +11,49 @@ function Contact() {
         <AnimatedDiv>
           <h1 className="section-heading">Get in touch!</h1>
         </AnimatedDiv>
+        <AnimatedDiv elementClassName="contact__form-wrapper">
+          <form className="contact__form">
+            <label htmlFor="name">Name</label>
+            <input 
+              className="portfolio-input"
+              id="name"
+              name="name" 
+              placeholder="e.g. Jhon Doe"
+              type="text" 
+              required
+            />
+            
+            <label htmlFor="email">Email</label>
+            <input 
+              className="portfolio-input"
+              id="email"
+              name="email"
+              placeholder="example@email.com" 
+              type="email" 
+              required
+            />
+            
+            <label htmlFor="subject">Subject</label>
+            <input 
+              className="portfolio-input"
+              id="subject"
+              name="subject" 
+              type="text" 
+              required
+            />
+            
+            <label htmlFor="body">Message</label>
+            <textarea
+              className="portfolio-input" 
+              id="body"
+              name="body" 
+              rows={9}
+              required
+            ></textarea>
+
+            <button className="portfolio-btn" type="submit">Send message</button>
+          </form>
+        </AnimatedDiv>
         <AnimatedDiv elementClassName="contact__links-container">
             <a 
               href="https://www.linkedin.com/in/joel-spinelli-497a1418b/" 

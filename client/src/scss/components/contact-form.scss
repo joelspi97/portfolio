@@ -1,0 +1,26 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins/icon.scss';
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 70rem;
+  width: 90%;
+
+  label {
+    font-size: 1.85rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    text-align: start;
+    width: fit-content;
+  }
+
+  textarea.portfolio-input {
+    min-height: 5.1rem;
+    resize: vertical;
+  }
+
+  .portfolio-btn {
+    border: 0.2rem solid $dark-blue;
+  }
+}

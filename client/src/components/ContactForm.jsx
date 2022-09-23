@@ -6,8 +6,21 @@ function ContactForm() {
   const [userEmail, setUserEmail] = useState('');
   const [userSubject, setUserSubject] = useState('');
   const [userMessage, setUserMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+  const [errorMsg, setErrorMsg] = useState(null);
 
-  function handleSubmit(e) {
+  function handleResponse(stateFunction) { // Handles loading spinner and error and success messages
+    setLoading(false);
+    stateFunction(true);
+
+    setTimeout(() => {
+      stateFunction(false);
+    }, 10000);
+  }
+
+  function handleSubmit(e) { // Makes an API POST request to the portfolio's back end
     e.preventDefault();
 
     let formData = {
@@ -17,33 +30,44 @@ function ContactForm() {
       userMessage
     };
 
-    const fetchConfig = { 
+    const fetchConfig = {
       method: 'POST',
-      headers: { 
+      headers: {
         'Accept': 'application/json',
-        'Content-Type': 'application/json' 
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(formData)
     };
 
+    setLoading(true);
+    setSuccess(false);
+    setError(false);
+    setErrorMsg(null);
+
     fetch('/', fetchConfig)
       .then(response => response.json())
       .then(data => {
-        console.log(data);
-        alert('Email sent');
+        // If we have an error array, this line will only return the first element of it 
+        if (Array.isArray(data) && data[0].msg.length > 0) throw new Error(data[0].msg);
+
         setUserName('');
         setUserEmail('');
         setUserSubject('');
         setUserMessage('');
+        handleResponse(setSuccess);
       })
-      .catch(error => console.error(error));
+      .catch(error => {
+        console.error(error);
+        handleResponse(setError);
+        setErrorMsg(String(error.message));
+      });
   }
 
   return (
-    <form className="contact__form">
+    <form className="contact-form" onSubmit={e => handleSubmit(e)}>
       <label htmlFor="name">Name</label>
       <input
-        className="portfolio-input"
+        className="contact-form__input"
         id="name"
         name="name"
         onChange={e => setUserName(e.target.value)}
@@ -55,7 +79,7 @@ function ContactForm() {
 
       <label htmlFor="email">Email</label>
       <input
-        className="portfolio-input"
+        className="contact-form__input"
         id="email"
         name="email"
         onChange={e => setUserEmail(e.target.value)}
@@ -67,7 +91,7 @@ function ContactForm() {
 
       <label htmlFor="subject">Subject</label>
       <input
-        className="portfolio-input"
+        className="contact-form__input"
         id="subject"
         name="subject"
         onChange={e => setUserSubject(e.target.value)}
@@ -78,7 +102,7 @@ function ContactForm() {
 
       <label htmlFor="body">Message</label>
       <textarea
-        className="portfolio-input"
+        className="contact-form__input"
         id="body"
         name="body"
         onChange={e => setUserMessage(e.target.value)}
@@ -87,13 +111,12 @@ function ContactForm() {
         value={userMessage}
       ></textarea>
 
-      <button 
-        className="portfolio-btn" 
-        onClick={e => handleSubmit(e)}
-        type="submit"
-      >
-        Send message
-      </button>
+      {/* Status messages */}
+      {success && <div className="contact-form__state-msg contact-form__state-msg--success" aria-live="assertive">Your message has been delivered successfully!</div>}
+      {error && <div className="contact-form__state-msg contact-form__state-msg--error" aria-live="assertive"><span className="sr-only">Error: </span>{errorMsg}</div>}
+      {loading && <div className="contact-form__loading-spinner" aria-live="assertive"><span className="sr-only">Loading.</span></div>}
+
+      <button className="portfolio-btn" type="submit">Send message</button>
     </form>
   );
 };

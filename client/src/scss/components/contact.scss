@@ -71,10 +71,6 @@
         @include icon(8rem, 8rem, "../../assets/icons/github_icon.png");
       }
 
-      .mail-icon {
-        @include icon(8rem, 8rem, "../../assets/icons/mail_icon.png");
-      }
-
       &:focus-visible {
         outline: 0.2rem solid $dark-blue;
       }
@@ -90,11 +86,6 @@
 
 @media only screen and (min-width: 530px) {
   .contact {
-    .section-decoration--left,
-    .section-decoration--right {
-      display: block;
-    }
-
     &__links-container {
       a {
         width: 18rem;
@@ -115,6 +106,15 @@
       a {
         font-size: 1.6rem;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .contact {
+    .section-decoration--left,
+    .section-decoration--right {
+      display: block;
     }
   }
 }

@@ -4,6 +4,5 @@ Webpage made to display some basic information about myself and show some projec
 
 To build this portfolio I used:
 * React
-* Node.js
 * Express
 * Sass 

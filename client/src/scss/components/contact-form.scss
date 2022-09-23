@@ -24,6 +24,15 @@
     padding: 0.7rem 1rem;
     transition: border-color 0.15s ease-in-out;
 
+    &:read-only {
+      border-color: $grey;
+      color: $grey;
+    }
+
+    &::placeholder {
+      color: #595959;
+    }
+
     &--error {
       border-color: $red;
       outline-color: $red;
@@ -74,6 +83,13 @@
     border: 0.2rem solid $dark-blue;
     font-size: 1.8rem;
     margin-top: 2.9rem;
+
+    &:disabled {
+      background-color: $portfolio-white;
+      border-color: $grey;
+      color: $grey;
+      cursor: default;
+    }
   }
 }
 

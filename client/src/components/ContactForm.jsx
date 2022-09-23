@@ -22,6 +22,7 @@ function ContactForm() {
 
   function handleSubmit(e) { // Makes an API POST request to the portfolio's back end
     e.preventDefault();
+    if (loading) return;
 
     let formData = {
       userName,
@@ -64,17 +65,18 @@ function ContactForm() {
   }
 
   return (
-    <form className="contact-form" onSubmit={e => handleSubmit(e)}>
+    <form className="contact-form" onSubmit={ e => handleSubmit(e) }>
       <label htmlFor="name">Name</label>
       <input
         className="contact-form__input"
         id="name"
         name="name"
-        onChange={e => setUserName(e.target.value)}
+        onChange={ e => setUserName(e.target.value) }
         placeholder="e.g. Jhon Doe"
+        readOnly={ loading } 
         required
         type="text"
-        value={userName}
+        value={ userName }
       />
 
       <label htmlFor="email">Email</label>
@@ -82,11 +84,12 @@ function ContactForm() {
         className="contact-form__input"
         id="email"
         name="email"
-        onChange={e => setUserEmail(e.target.value)}
+        onChange={ e => setUserEmail(e.target.value) }
         placeholder="example@email.com"
+        readOnly={ loading }
         required
         type="email"
-        value={userEmail}
+        value={ userEmail }
       />
 
       <label htmlFor="subject">Subject</label>
@@ -94,10 +97,11 @@ function ContactForm() {
         className="contact-form__input"
         id="subject"
         name="subject"
-        onChange={e => setUserSubject(e.target.value)}
+        onChange={ e => setUserSubject(e.target.value) }
+        readOnly={ loading }
         required
         type="text"
-        value={userSubject}
+        value={ userSubject }
       />
 
       <label htmlFor="body">Message</label>
@@ -105,18 +109,19 @@ function ContactForm() {
         className="contact-form__input"
         id="body"
         name="body"
-        onChange={e => setUserMessage(e.target.value)}
+        onChange={ e => setUserMessage(e.target.value) }
+        readOnly={ loading }
         required
-        rows={9}
-        value={userMessage}
+        rows={ 9 }
+        value={ userMessage }
       ></textarea>
 
-      {/* Status messages */}
-      {success && <div className="contact-form__state-msg contact-form__state-msg--success" aria-live="assertive">Your message has been delivered successfully!</div>}
-      {error && <div className="contact-form__state-msg contact-form__state-msg--error" aria-live="assertive"><span className="sr-only">Error: </span>{errorMsg}</div>}
-      {loading && <div className="contact-form__loading-spinner" aria-live="assertive"><span className="sr-only">Loading.</span></div>}
+      { /* Status messages */ }
+      { success && <div className="contact-form__state-msg contact-form__state-msg--success" aria-live="assertive">Your message has been delivered successfully!</div> }
+      { error && <div className="contact-form__state-msg contact-form__state-msg--error" aria-live="assertive"><span className="sr-only">Error: </span>{errorMsg}</div> }
+      { loading && <div className="contact-form__loading-spinner" aria-live="assertive"><span className="sr-only">Loading.</span></div> }
 
-      <button className="portfolio-btn" type="submit">Send message</button>
+      <button className="portfolio-btn" type="submit" disabled={ loading }>Send message</button>
     </form>
   );
 };

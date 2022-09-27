@@ -9,5 +9,6 @@ It features:
 
 To build this portfolio I used:
 * React
+* Node.js
 * Express
 * Sass 

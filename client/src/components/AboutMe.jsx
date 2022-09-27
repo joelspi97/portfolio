@@ -25,8 +25,8 @@ function AboutMe() {
             <AnimatedDiv elementClassName="about-me__text-container center-content">
                 <p><span>I'm a full-stack developer</span> with a passion for learning new technologies.</p>
                 <p>
-                  Currently working as a <span>React</span>, <span>Sharepoint</span> and <span>Power Platform</span> developer for the
-                  {' '} <a className="simple-link focusable" href="https://www.ey.com/" target="_blank" rel="noreferrer" title="Visit the official Ernst &#38; Young website">Ernst &#38; Young GDS</a> 
+                  Currently working as a <span>React</span> and <span>Sharepoint</span> developer for the
+                  {' '} <a className="simple-link focusable" href="https://www.ey.com/" target="_blank" rel="noreferrer" title="Visit the official EY website">EY GDS</a> 
                   {' '} development team.
                 </p>
                 <p>

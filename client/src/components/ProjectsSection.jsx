@@ -13,7 +13,7 @@ function Projects() {
           stack={['React', 'TypeScript', 'Redux (+Thunk)', 'Bootstrap', 'Sass']}
           description='Movie Finder is a platform that lets user search for information about any movie they want. It also allows them to rate them using their TMDb account.'
           iconClassName='movie-finder-icon'
-          demoUrl='https://movie-finder-joelspinelli.herokuapp.com/'
+          demoUrl='https://movie-finder-sigma-bay.vercel.app/'
           repositoryUrl='https://github.com/joelspi97/movie-finder'
           left={true}
         >

@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimatedDiv from './AnimatedDiv';
 import '../scss/components/contact.scss';
-import ContactForm from './ContactForm';
+// import ContactForm from './ContactForm';
 
 function Contact() {
   return (
@@ -12,9 +12,9 @@ function Contact() {
         <AnimatedDiv>
           <h1 className="section-heading">Get in touch!</h1>
         </AnimatedDiv>
-        <AnimatedDiv elementClassName="contact__form-wrapper">
+        {/* <AnimatedDiv elementClassName="contact__form-wrapper">
           <ContactForm />
-        </AnimatedDiv>
+        </AnimatedDiv> */}
         <AnimatedDiv elementClassName="contact__links-container">
             <a 
               href="https://www.linkedin.com/in/joel-spinelli-497a1418b/" 

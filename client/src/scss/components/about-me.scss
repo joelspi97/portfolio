@@ -47,6 +47,7 @@
     }
 
     .language-wrapper {
+      align-items: flex-start;
       display: grid;
       gap: 6rem;
       grid-template-columns: 1fr;

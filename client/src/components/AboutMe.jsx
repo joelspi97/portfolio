@@ -5,11 +5,14 @@ import htmlIcon from '../assets/icons/html-icon.png';
 import cssIcon from '../assets/icons/css-icon.png';
 import javascriptIcon from '../assets/icons/javascript-icon.png';
 import reactIcon from '../assets/icons/react-icon.png';
-import nodeIcon from '../assets/icons/node-icon.png';
-import expressIcon from '../assets/icons/express-icon.png';
+// import nodeIcon from '../assets/icons/node-icon.png';
+// import expressIcon from '../assets/icons/express-icon.png';
 import angularIcon from '../assets/icons/angular-icon.png';
+import sharepointIcon from '../assets/icons/sharepoint-icon.png';
+import powerappsIcon from '../assets/icons/powerapps-icon.png';
+import powerautomateIcon from '../assets/icons/powerautomate-icon.png';
 import reduxIcon from '../assets/icons/redux-icon.png';
-import jestIcon from '../assets/icons/jest-icon.png';
+// import jestIcon from '../assets/icons/jest-icon.png';
 import typescriptIcon from '../assets/icons/typescript-icon.png';
 import sassIcon from '../assets/icons/sass-icon.png';
 import bootstrapIcon from '../assets/icons/bootstrap-icon.png';
@@ -24,10 +27,12 @@ function AboutMe() {
                 <h1 className="section-heading">Hello, my name is <span>Joel Spinelli</span>.</h1>
             </AnimatedDiv>
             <AnimatedDiv elementClassName="about-me__text-container center-content">
-                <p><span>I'm a full-stack JavaScript developer</span> with a passion for learning new technologies.</p>
+                <p><span>I'm a ssr. web developer</span> with a passion for learning new technologies.</p>
                 <p>
-                  Currently working as a <span>React</span> and <span>Sharepoint</span> developer for
-                  {' '} <a className="simple-link focusable" href="https://www.ey.com/" target="_blank" rel="noreferrer" title="Visit the official EY website">EY GDS</a>.
+                  Currently working as a <span>SharePoint developer</span> at
+                  {' '} <a className="simple-link focusable" href="https://www.ey.com/" target="_blank" rel="noreferrer" title="Visit the official EY website">EY GDS</a>, 
+                  <br />
+                  using <span>SPFx + React / Angular</span> and the <span>Power Platform</span> (Power Apps / Power Automate).
                 </p>
                 <p>
                   In the past, <span>I worked as a front-end developer</span> for the 
@@ -37,7 +42,9 @@ function AboutMe() {
                   {' '} <a className="simple-link focusable" href="https://www.frba.utn.edu.ar/en/" target="_blank" rel="noreferrer" title="Visit the official website of the National University of Technology of Buenos Aires">National University of Technology of Buenos Aires</a>.
                 </p>
                 <p>
-                  I've learned to program websites by following multiple courses from platforms such as
+                  I've learned to program websites by following multiple courses  
+                  <br />
+                  from platforms such as
                   {' '} <a className="simple-link focusable" href="https://platzi.com/p/joelspinelli/" target="_blank" rel="noreferrer" title="Visit my Platzi profile">Platzi</a>,
                   {' '} <a className="simple-link focusable" href="https://academind.com/" target="_blank" rel="noreferrer" title="Visit official Academind website">Academind</a> and 
                   {' '} <a className="simple-link focusable" href="https://www.linkedin.com/learning/" target="_blank" rel="noreferrer" title="Visit my LinkedIn profile">LinkedIn Learning</a>.
@@ -52,10 +59,13 @@ function AboutMe() {
                     <AnimatedDiv elementClassName="language"><img src={reactIcon} alt="" /><span>React</span></AnimatedDiv>
                     <AnimatedDiv elementClassName="language"><img src={angularIcon} alt="" /><span>Angular</span></AnimatedDiv>
                     <AnimatedDiv elementClassName="language"><img src={typescriptIcon} alt="" /><span>TypeScript</span></AnimatedDiv>
-                    <AnimatedDiv elementClassName="language"><img src={nodeIcon} alt="" /><span>Node.js</span></AnimatedDiv>
-                    <AnimatedDiv elementClassName="language"><img src={expressIcon} alt="" /><span>Express</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={sharepointIcon} alt="" /><span>SharePoint (SPFx)</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={powerappsIcon} alt="" /><span>Power Apps</span></AnimatedDiv>
+                    <AnimatedDiv elementClassName="language"><img src={powerautomateIcon} alt="" /><span>Power Automate</span></AnimatedDiv>
+                    {/* <AnimatedDiv elementClassName="language"><img src={nodeIcon} alt="" /><span>Node.js</span></AnimatedDiv> */}
+                    {/* <AnimatedDiv elementClassName="language"><img src={expressIcon} alt="" /><span>Express</span></AnimatedDiv> */}
                     <AnimatedDiv elementClassName="language"><img src={reduxIcon} alt="" /><span>Redux</span></AnimatedDiv>
-                    <AnimatedDiv elementClassName="language"><img src={jestIcon} alt="" /><span>Jest</span></AnimatedDiv>
+                    {/* <AnimatedDiv elementClassName="language"><img src={jestIcon} alt="" /><span>Jest</span></AnimatedDiv> */}
                     <AnimatedDiv elementClassName="language"><img src={htmlIcon} alt="" /><span>HTML5</span></AnimatedDiv>
                     <AnimatedDiv elementClassName="language"><img src={cssIcon} alt="" /><span>CSS3</span></AnimatedDiv>
                     <AnimatedDiv elementClassName="language"><img src={javascriptIcon} alt="" /><span>JavaScript</span></AnimatedDiv>

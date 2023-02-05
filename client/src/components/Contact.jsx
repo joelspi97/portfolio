@@ -38,6 +38,15 @@ function Contact() {
               <span className="github-icon"></span>
               GitHub
             </a>
+            <a 
+              href="mailto:joelspi97@gmail.com" 
+              title="Send me an email" 
+              rel="noreferrer"
+              className="focusable"
+            >
+              <span className="mail-icon"></span>
+              Send me an email!
+            </a>
         </AnimatedDiv>
     </section>
   );

@@ -42,7 +42,11 @@ function Header() {
             </AnimatedDiv>
             <div className="header__heading-container center-content">
                 <AnimatedDiv>
-                    <h1 className="section-heading"><span>Full-stack</span> <span>development</span></h1>
+                    <h1 className="section-heading">
+                      <span>Joel Spinelli</span> 
+                      <br />
+                      <span>Web developer</span>
+                    </h1>
                 </AnimatedDiv>
                 <AnimatedDiv>
                     <img src={profilePicture} alt="Joel Spinelli, front-end developer, coding in his laptop." />

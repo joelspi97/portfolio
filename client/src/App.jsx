@@ -31,7 +31,7 @@ function App() {
               Click here!
             </a>
           </p>
-          <p>Made with React, Node.js and <span aria-label="love">❤️️</span> by Joel Spinelli.</p>
+          <p>Made with React and <span aria-label="love">❤️️</span> by Joel Spinelli.</p>
         </AnimatedDiv>
       </footer>
     </>

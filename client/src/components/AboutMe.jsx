@@ -27,7 +27,7 @@ function AboutMe() {
                 <h1 className="section-heading">Hello, my name is <span>Joel Spinelli</span>.</h1>
             </AnimatedDiv>
             <AnimatedDiv elementClassName="about-me__text-container center-content">
-                <p><span>I'm a ssr. web developer</span> with a passion for learning new technologies.</p>
+                <p><span>I'm a Ssr. web developer</span> with a passion for learning new technologies.</p>
                 <p>
                   Currently working as a <span>SharePoint developer</span> at
                   {' '} <a className="simple-link focusable" href="https://www.ey.com/" target="_blank" rel="noreferrer" title="Visit the official EY website">EY GDS</a>, 

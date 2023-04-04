@@ -26,7 +26,7 @@ function App() {
               className="simple-link focusable" 
               href="https://github.com/joelspi97/portfolio" 
               target="_blank" rel="noreferrer" 
-              title="Visit this website Github repository"
+              title="Visit this website's Github repository"
             >
               Click here!
             </a>

@@ -45,7 +45,7 @@ function Contact() {
               className="focusable"
             >
               <span className="mail-icon"></span>
-              Send me an email!
+              Send me an email
             </a>
         </AnimatedDiv>
     </section>

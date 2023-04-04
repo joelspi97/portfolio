@@ -29,14 +29,12 @@ function AboutMe() {
             <AnimatedDiv elementClassName="about-me__text-container center-content">
                 <p><span>I'm a Ssr. web developer</span> with a passion for learning new technologies.</p>
                 <p>
-                  Currently working as a <span>SharePoint developer</span> at
-                  {' '} <a className="simple-link focusable" href="https://www.ey.com/" target="_blank" rel="noreferrer" title="Visit the official EY website">EY GDS</a>, 
-                  <br />
-                  using <span>SPFx + React / Angular</span> and the <span>Power Platform</span> (Power Apps / Power Automate).
+                  Currently working as a <span>Front-end developer</span> at
+                  {' '} <a className="simple-link focusable" href="https://www.ey.com/" target="_blank" rel="noreferrer" title="Visit the official EY website">EY GDS</a>, using <span>React, TypeScript, Angular and SPFx</span>.
                 </p>
                 <p>
                   In the past, <span>I worked as a front-end developer</span> for the 
-                  {' '} <a className="simple-link focusable" href="https://gba.gob.ar/" target="_blank" rel="noreferrer" title="Visit the official website of the Goverment of the Province of Buenos Aires">Buenos Aires Directorate of Online Government</a> 
+                  {' '} <a className="simple-link focusable" href="https://gba.gob.ar/" target="_blank" rel="noreferrer" title="Visit the official website of the Government of the Province of Buenos Aires">Buenos Aires Directorate of Online Government</a> 
                   <br />
                   and also for the 
                   {' '} <a className="simple-link focusable" href="https://www.frba.utn.edu.ar/en/" target="_blank" rel="noreferrer" title="Visit the official website of the National University of Technology of Buenos Aires">National University of Technology of Buenos Aires</a>.
@@ -46,10 +44,12 @@ function AboutMe() {
                   <br />
                   from platforms such as
                   {' '} <a className="simple-link focusable" href="https://platzi.com/p/joelspinelli/" target="_blank" rel="noreferrer" title="Visit my Platzi profile">Platzi</a>,
-                  {' '} <a className="simple-link focusable" href="https://academind.com/" target="_blank" rel="noreferrer" title="Visit official Academind website">Academind</a> and 
+                  {' '} <a className="simple-link focusable" href="https://www.udemy.com/" target="_blank" rel="noreferrer" title="Visit the Udemy">Udemy</a>,
+                  {' '} <a className="simple-link focusable" href="https://academind.com/" target="_blank" rel="noreferrer" title="Visit the Academind">Academind</a> and 
                   {' '} <a className="simple-link focusable" href="https://www.linkedin.com/learning/" target="_blank" rel="noreferrer" title="Visit my LinkedIn profile">LinkedIn Learning</a>.
                 </p>
                 <p>My goal is to make every website I work on fully responsive, pixel perfect and accessible.</p>
+                <p>I currently find myself learning <span>React Native</span>.</p>
             </AnimatedDiv>
             <div className="about-me__stack center-content">
                 <AnimatedDiv>
@@ -57,15 +57,10 @@ function AboutMe() {
                 </AnimatedDiv>
                 <div className="language-wrapper">
                     <AnimatedDiv elementClassName="language"><img src={reactIcon} alt="" /><span>React</span></AnimatedDiv>
-                    <AnimatedDiv elementClassName="language"><img src={angularIcon} alt="" /><span>Angular</span></AnimatedDiv>
                     <AnimatedDiv elementClassName="language"><img src={typescriptIcon} alt="" /><span>TypeScript</span></AnimatedDiv>
-                    <AnimatedDiv elementClassName="language"><img src={sharepointIcon} alt="" /><span>SharePoint (SPFx)</span></AnimatedDiv>
-                    <AnimatedDiv elementClassName="language"><img src={powerappsIcon} alt="" /><span>Power Apps</span></AnimatedDiv>
-                    <AnimatedDiv elementClassName="language"><img src={powerautomateIcon} alt="" /><span>Power Automate</span></AnimatedDiv>
-                    {/* <AnimatedDiv elementClassName="language"><img src={nodeIcon} alt="" /><span>Node.js</span></AnimatedDiv> */}
-                    {/* <AnimatedDiv elementClassName="language"><img src={expressIcon} alt="" /><span>Express</span></AnimatedDiv> */}
+                    <AnimatedDiv elementClassName="language"><img src={angularIcon} alt="" /><span>Angular</span></AnimatedDiv>
                     <AnimatedDiv elementClassName="language"><img src={reduxIcon} alt="" /><span>Redux</span></AnimatedDiv>
-                    {/* <AnimatedDiv elementClassName="language"><img src={jestIcon} alt="" /><span>Jest</span></AnimatedDiv> */}
+                    <AnimatedDiv elementClassName="language"><img src={sharepointIcon} alt="" /><span>SharePoint (SPFx)</span></AnimatedDiv>
                     <AnimatedDiv elementClassName="language"><img src={htmlIcon} alt="" /><span>HTML5</span></AnimatedDiv>
                     <AnimatedDiv elementClassName="language"><img src={cssIcon} alt="" /><span>CSS3</span></AnimatedDiv>
                     <AnimatedDiv elementClassName="language"><img src={javascriptIcon} alt="" /><span>JavaScript</span></AnimatedDiv>
@@ -73,6 +68,11 @@ function AboutMe() {
                     <AnimatedDiv elementClassName="language"><img src={bootstrapIcon} alt="" /><span>Bootstrap</span></AnimatedDiv>
                     <AnimatedDiv elementClassName="language"><img src={gitIcon} alt="" /><span>Git</span></AnimatedDiv>
                     <AnimatedDiv elementClassName="language"><img src={webAccessibilityIcon} alt="" /><span>Web Accessibility</span></AnimatedDiv>
+                    {/* <AnimatedDiv elementClassName="language"><img src={nodeIcon} alt="" /><span>Node.js</span></AnimatedDiv> */}
+                    {/* <AnimatedDiv elementClassName="language"><img src={expressIcon} alt="" /><span>Express</span></AnimatedDiv> */}
+                    {/* <AnimatedDiv elementClassName="language"><img src={jestIcon} alt="" /><span>Jest</span></AnimatedDiv> */}
+                    {/* <AnimatedDiv elementClassName="language"><img src={powerappsIcon} alt="" /><span>Power Apps</span></AnimatedDiv> */}
+                    {/* <AnimatedDiv elementClassName="language"><img src={powerautomateIcon} alt="" /><span>Power Automate</span></AnimatedDiv> */}
                 </div>
             </div>
         </section>

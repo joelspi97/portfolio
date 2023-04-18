@@ -46,11 +46,18 @@ function ContactForm() {
     setErrorMsg(null);
 
     fetch('/', fetchConfig)
-      .then(response => response.json())
+      .then(response => {
+        if (!response.ok) {
+          if (response.status === 400) {
+            throw new Error('Some of the required information is either missing or malformatted. Please, correct your data and try again.');
+          } else if (response.status === 500) {
+            throw new Error('A server error has occurred. Please, try again later.');
+          }
+        } else {
+          return response.json();
+        }
+      })
       .then(data => {
-        // If we have an error array, this line will only return the first element of it 
-        if (Array.isArray(data) && data[0].message.length > 0) throw new Error(data[0].message);
-
         setUserName('');
         setUserEmail('');
         setUserSubject('');
@@ -60,7 +67,7 @@ function ContactForm() {
       .catch(error => {
         console.error(error);
         handleResponse(setError);
-        setErrorMsg(String(error.message));
+        setErrorMsg(error.message);
       });
   }
 

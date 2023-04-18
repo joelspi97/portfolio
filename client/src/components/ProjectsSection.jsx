@@ -9,21 +9,36 @@ function Projects() {
       <h1 className="section-heading">Projects</h1>
       <div className="projects-section__grid-container center-content">
         <Project
+          name='MI Blog'
+          stack={['NodeJS', 'Express', 'MongoDB', 'HTML5', 'CSS3']}
+          description='MI Blog is a generic blog website. It allows its users to create their own blogposts and read the ones others have created before them.'
+          iconClassName='generic-blog-icon'
+          demoUrl='https://mi-blog-joelspinelli.netlify.app/index.html'
+          repositoryUrl='https://github.com/joelspi97/MI-blog'
+          left={true}
+          features={[
+            'A CRUD system, to allow users interact with a database.',
+            'A form with validation logic, to avoid sending incorrect data to the database.',
+            'A details page for each item, which allows user to select a specific blog and get more details on it.',
+            'An accessible UI that follows the Web Content Accessibility Guidelines (WCAG) 2.1.'
+          ]}
+        />
+
+        <Project
           name='Movie Finder'
           stack={['React', 'TypeScript', 'Redux (+Thunk)', 'Bootstrap', 'Sass']}
           description='Movie Finder is a platform that lets user search for information about any movie they want. It also allows them to rate them using their TMDb account.'
           iconClassName='movie-finder-icon'
           demoUrl='https://movie-finder-sigma-bay.vercel.app/'
           repositoryUrl='https://github.com/joelspi97/movie-finder'
-          left={true}
-        >
-          <ol>
-            <li>An infinite scroll list, which retrieves data from an API to display movies.</li>
-            <li>An input which allows the user to search for specific titles.</li>
-            <li>A details page for each movie that offers an option for users to be able to vote on movie ratings.</li>
-            <li>An accessible UI that follows the Web Content Accessibility Guidelines (WCAG) 2.1.</li>
-          </ol>
-        </Project>
+          left={false}
+          features={[
+            'An infinite scroll list, which retrieves data from an API to display movies.',
+            'An input which allows the user to search for specific titles.',
+            'A details page for each movie that offers an option for users to be able to vote on movie ratings.',
+            'An accessible UI that follows the Web Content Accessibility Guidelines (WCAG) 2.1.'
+          ]}
+        />
 
         <Project
           name='To-do List'
@@ -32,18 +47,16 @@ function Projects() {
           iconClassName='to-do-list-icon'
           demoUrl='https://to-do-list-joelspinelli.netlify.app/'
           repositoryUrl='https://github.com/joelspi97/To-do-List'
-          left={false}
-        >
-          <ol>
-            <li>A menu for users to create their own to-do's, which can later be edited, marked as completed and/or deleted.</li>
-            <li>Usage of a third party library to make to-do's draggable and droppable to rearrange them.</li>
-            <li>Usage of local storage to save and display the user's to-do's.</li>
-            <li>An input which allows the user to search for specific todos.</li>
-            <li>A settings menu which allows the user to customize their experience on the webpage.</li>
-            <li>An accessible UI that follows the Web Content Accessibility Guidelines (WCAG) 2.1.</li>
-          </ol>
-
-        </Project>
+          left={true}
+          features={[
+            "A menu for users to create their own to-do's, which can later be edited, marked as completed and/or deleted.",
+            "Usage of a third party library to make to-do's draggable and droppable to rearrange them",
+            "Usage of local storage to save and display the user's to-do's.",
+            "An input which allows the user to search for specific to-do's.",
+            'A settings menu which allows the user to customize their experience on the webpage.',
+            'An accessible UI that follows the Web Content Accessibility Guidelines (WCAG) 2.1.'
+          ]}
+        />
 
         <Project
           name='Batata Bit'
@@ -52,16 +65,6 @@ function Projects() {
           iconClassName='batata-bit-icon'
           demoUrl='https://batata-bit-joelspinelli.netlify.app/'
           repositoryUrl='https://github.com/joelspi97/batata-bit'
-          left={true}
-        />
-
-        <Project
-          name='MI Blog'
-          stack={['HTML5', 'CSS3']}
-          description='MI Blog is a generic blog website. It consists of a fully responsive static layout that follows the Web Content Accessibility Guidelines (WCAG) 2.1.'
-          iconClassName='generic-blog-icon'
-          demoUrl='https://mi-blog-joelspinelli.netlify.app/index.html'
-          repositoryUrl='https://github.com/joelspi97/MI-blog'
           left={false}
         />
       </div>

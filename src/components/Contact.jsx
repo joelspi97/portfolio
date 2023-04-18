@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimatedDiv from './AnimatedDiv';
 import '../scss/components/contact.scss';
-// import ContactForm from './ContactForm';
+import ContactForm from './ContactForm';
 
 function Contact() {
   return (
@@ -12,9 +12,11 @@ function Contact() {
         <AnimatedDiv>
           <h1 className="section-heading">Get in touch!</h1>
         </AnimatedDiv>
-        {/* <AnimatedDiv elementClassName="contact__form-wrapper">
+
+        <AnimatedDiv elementClassName="contact__form-wrapper">
           <ContactForm />
-        </AnimatedDiv> */}
+        </AnimatedDiv>
+
         <AnimatedDiv elementClassName="contact__links-container">
             <a 
               href="https://www.linkedin.com/in/joel-spinelli-497a1418b/" 
@@ -27,6 +29,7 @@ function Contact() {
               <span className="linkedin-icon"></span>
               LinkedIn
             </a>
+
             <a 
               href="https://github.com/joelspi97" 
               title="Visit my Github profile" 
@@ -38,7 +41,8 @@ function Contact() {
               <span className="github-icon"></span>
               GitHub
             </a>
-            <a 
+            
+            {/* <a 
               href="mailto:joelspi97@gmail.com" 
               title="Send me an email" 
               rel="noreferrer"
@@ -46,7 +50,7 @@ function Contact() {
             >
               <span className="mail-icon"></span>
               Send me an email
-            </a>
+            </a> */}
         </AnimatedDiv>
     </section>
   );

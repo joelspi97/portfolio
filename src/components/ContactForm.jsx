@@ -49,7 +49,7 @@ function ContactForm() {
       .then(response => response.json())
       .then(data => {
         // If we have an error array, this line will only return the first element of it 
-        if (Array.isArray(data) && data[0].msg.length > 0) throw new Error(data[0].msg);
+        if (Array.isArray(data) && data[0].message.length > 0) throw new Error(data[0].message);
 
         setUserName('');
         setUserEmail('');
@@ -79,7 +79,7 @@ function ContactForm() {
         value={ userName }
       />
 
-      <label htmlFor="email">Email</label>
+      <label htmlFor="email">Your email</label>
       <input
         className="contact-form__input"
         id="email"

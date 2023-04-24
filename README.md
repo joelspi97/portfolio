@@ -12,3 +12,14 @@ To build it I used the following:
 * NodeJS 
 * Express 
 * Sass
+
+## In case you want to run this project in your local environment: 
+To build it, I used Node v16.15.1 and npm v8.11.0.
+
+1. npm install
+2. npm start (run a development server for the front end of the app)
+3. npm run serverDevStart (run a development back end server, necessary for the mailer form)
+
+Make sure that the proxy address (declared inside of package.json) matches with the port in which you are running your back end server. 
+
+I don't claim ownership for any of the images used on it (beside the ones that include myself in them).

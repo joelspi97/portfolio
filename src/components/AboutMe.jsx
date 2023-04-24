@@ -24,11 +24,11 @@ function AboutMe() {
         <h1 className="section-heading">Hello, my name is <span>Joel Spinelli</span>.</h1>
       </AnimatedDiv>
       <AnimatedDiv elementClassName="about-me__text-container center-content">
-        <p><span>I'm a Ssr. Full Stack Web Developer</span> with over 2 years of professional experience, and full of passion for programming.</p>
-        <p>I make use of the MERN stack: <span>MongoDB, Express, React and NodeJS (+ TypeScript).</span></p>
+        <p><span>I'm a Full Stack Web Developer</span> with over 2 years of professional experience, and full of passion for programming.</p>
+        <p>I make use of the MERN stack: <span>MongoDB, Express, React and NodeJS (+ TypeScript)</span>.</p>
         <p>
           Currently working as a <span>Front-end developer</span> at
-          {' '} <a className="simple-link focusable" href="https://www.ey.com/" target="_blank" rel="noreferrer" title="Visit the official EY website">EY GDS</a>, using <span>React, TypeScript and Angular</span>.
+          {' '} <a className="simple-link focusable" href="https://www.ey.com/" target="_blank" rel="noreferrer" title="Visit the official EY website">EY GDS</a>, using <span>React and TypeScript</span>.
         </p>
         <p>
           In the past, <span>I worked as a front-end developer</span> for the
@@ -47,7 +47,7 @@ function AboutMe() {
           {' '} <a className="simple-link focusable" href="https://www.linkedin.com/learning/" target="_blank" rel="noreferrer" title="Visit my LinkedIn profile">LinkedIn Learning</a>.
         </p>
         <p>My goal is to make every website I work on fully responsive, pixel perfect and accessible.</p>
-        <p>I currently find myself learning <span>React Native</span> for mobile development.</p>
+        <p>I'm interested in learning mobile technologies in the future, such as <span>React Native and Swift</span>.</p>
       </AnimatedDiv>
       <div className="about-me__stack center-content">
         <AnimatedDiv>

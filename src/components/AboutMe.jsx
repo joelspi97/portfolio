@@ -7,9 +7,9 @@ import javascriptIcon from '../assets/icons/javascript-icon.png';
 import reactIcon from '../assets/icons/react-icon.png';
 import nodeIcon from '../assets/icons/node-icon.png';
 import expressIcon from '../assets/icons/express-icon.png';
-import angularIcon from '../assets/icons/angular-icon.png';
+// import angularIcon from '../assets/icons/angular-icon.png';
 import reduxIcon from '../assets/icons/redux-icon.png';
-import jestIcon from '../assets/icons/jest-icon.png';
+// import jestIcon from '../assets/icons/jest-icon.png';
 import typescriptIcon from '../assets/icons/typescript-icon.png';
 import sassIcon from '../assets/icons/sass-icon.png';
 import bootstrapIcon from '../assets/icons/bootstrap-icon.png';
@@ -58,8 +58,8 @@ function AboutMe() {
           <AnimatedDiv elementClassName="language"><img src={typescriptIcon} alt="" /><span>TypeScript</span></AnimatedDiv>
           <AnimatedDiv elementClassName="language"><img src={nodeIcon} alt="" /><span>Node.js</span></AnimatedDiv>
           <AnimatedDiv elementClassName="language"><img src={expressIcon} alt="" /><span>Express</span></AnimatedDiv>
-          <AnimatedDiv elementClassName="language"><img src={jestIcon} alt="" /><span>Jest</span></AnimatedDiv>
-          <AnimatedDiv elementClassName="language"><img src={angularIcon} alt="" /><span>Angular</span></AnimatedDiv>
+          {/* <AnimatedDiv elementClassName="language"><img src={jestIcon} alt="" /><span>Jest</span></AnimatedDiv> */}
+          {/* <AnimatedDiv elementClassName="language"><img src={angularIcon} alt="" /><span>Angular</span></AnimatedDiv> */}
           <AnimatedDiv elementClassName="language"><img src={reduxIcon} alt="" /><span>Redux</span></AnimatedDiv>
           <AnimatedDiv elementClassName="language"><img src={htmlIcon} alt="" /><span>HTML5</span></AnimatedDiv>
           <AnimatedDiv elementClassName="language"><img src={cssIcon} alt="" /><span>CSS3</span></AnimatedDiv>

@@ -13,7 +13,7 @@ function Projects() {
           stack={['NodeJS', 'Express', 'MongoDB', 'HTML5', 'CSS3']}
           description='MI Blog is a generic blog website. It allows its users to create their own blogposts and read the ones others have created before them.'
           iconClassName='generic-blog-icon'
-          demoUrl='https://mi-blog-joelspinelli.netlify.app/index.html'
+          demoUrl='https://mi-blog-s6m5.onrender.com'
           repositoryUrl='https://github.com/joelspi97/MI-blog'
           left={true}
           features={[

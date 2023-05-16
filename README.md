@@ -20,11 +20,19 @@ To build this project I used Node v16.15.1 and npm v8.11.0, so it's also advisab
 
 Follow these steps: 
 1. Open the project on your preferred code editor. 
-2. Open a terminal and go inside the backend directory: **cd backend** 
-3. Run the following command: **npm run devStart**
-4. Open a new terminal and go inside the frontend directory: **cd frontend**
-5. Make sure that the proxy address (declared inside of frontend's package.json) matches with the port in which you are running your back end server. 
-6. Run the following command: **npm start**
+1. Open a terminal and go inside the frontend directory: **cd frontend**
+1. Run the following command: **npm install**
+1. Run the following command: **npm start**
+
+__Optional__: You could also make the contact form functional, but that will require extra, more complex steps: 
+1. Open a new terminal and go inside the backend directory: **cd backend** 
+1. Run the following command: **npm install**
+1. Create a file called **.env** and inside of it declare the following environment variables: 
+    1. **EMAIL**=insert_here_your_email (use a gmail account)
+    1. **PASS**=insert_here_your_application_password (if you want to be able to use the contact form, you'll need to create an application password for your gmail account and authorize it)
+    1. **PORT**=insert_here_the_port_number_in_which_you_want_to_run_the_project's_backend_server 
+1. Make sure that the proxy address (declared inside of frontend's package.json) matches with the port in which you are running your back end server. 
+1. Run the following command: **npm run devStart**
 
 ## Screenshots
 ![Screenshot of Joel's portoflio 1 of 4. It's the initial view, which is a picture of Joel coding con his laptop.](./screenshots/screenshot1.png)

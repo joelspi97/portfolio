@@ -34,9 +34,8 @@ app.post('/', (req, res) => {
     subject: `Message from ${req.body.userName}: ${req.body.userSubject}`,
     text: `
 Sender's email: ${req.body.userEmail}
-Message: 
-${req.body.userMessage}
-    `
+Message: ${req.body.userMessage}
+`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {

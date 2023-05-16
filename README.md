@@ -23,7 +23,8 @@ Follow these steps:
 2. Open a terminal and go inside the backend directory: **cd backend** 
 3. Run the following command: **npm run devStart**
 4. Open a new terminal and go inside the frontend directory: **cd frontend**
-5. Run the following command: **npm start**
+5. Make sure that the proxy address (declared inside of frontend's package.json) matches with the port in which you are running your back end server. 
+6. Run the following command: **npm start**
 
 ## Screenshots
 ![Screenshot of Joel's portoflio 1 of 4. It's the initial view, which is a picture of Joel coding con his laptop.](./screenshots/screenshot1.png)
@@ -34,6 +35,4 @@ Follow these steps:
 
 ![Screenshot of Joel's portoflio 4 of 4. It's the contact form of Joel's portfolio.](./screenshots/screenshot4.png)
 
-Make sure that the proxy address (declared inside of package.json) matches with the port in which you are running your back end server. 
-
-I don't claim ownership for any of the images used on it (beside the ones that include myself in them).
+_I don't claim ownership for any of the images used on it (beside the ones that include myself in them)._

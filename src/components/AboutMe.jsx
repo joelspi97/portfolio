@@ -14,6 +14,7 @@ import typescriptIcon from '../assets/icons/typescript-icon.png';
 import sassIcon from '../assets/icons/sass-icon.png';
 import bootstrapIcon from '../assets/icons/bootstrap-icon.png';
 import gitIcon from '../assets/icons/git-icon.png';
+import mongoIcon from '../assets/icons/mongo-icon.svg';
 import webAccessibilityIcon from '../assets/icons/web-accessibility-icon.png';
 
 function AboutMe() {
@@ -58,6 +59,7 @@ function AboutMe() {
           <AnimatedDiv elementClassName="language"><img src={typescriptIcon} alt="" /><span>TypeScript</span></AnimatedDiv>
           <AnimatedDiv elementClassName="language"><img src={nodeIcon} alt="" /><span>Node.js</span></AnimatedDiv>
           <AnimatedDiv elementClassName="language"><img src={expressIcon} alt="" /><span>Express</span></AnimatedDiv>
+          <AnimatedDiv elementClassName="language"><img src={mongoIcon} alt="" /><span>MongoDB</span></AnimatedDiv>
           {/* <AnimatedDiv elementClassName="language"><img src={jestIcon} alt="" /><span>Jest</span></AnimatedDiv> */}
           {/* <AnimatedDiv elementClassName="language"><img src={angularIcon} alt="" /><span>Angular</span></AnimatedDiv> */}
           <AnimatedDiv elementClassName="language"><img src={reduxIcon} alt="" /><span>Redux</span></AnimatedDiv>

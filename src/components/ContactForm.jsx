@@ -20,7 +20,7 @@ function ContactForm() {
     }, 10000);
   }
 
-  function handleSubmit(e) { // Makes an API POST request to the portfolio's back end
+  async function handleSubmit(e) { // Makes an API POST request to the portfolio's back end
     e.preventDefault();
     if (loading) return;
 
@@ -45,30 +45,25 @@ function ContactForm() {
     setError(false);
     setErrorMsg(null);
 
-    fetch('/', fetchConfig)
-      .then(response => {
-        if (!response.ok) {
-          if (response.status === 400) {
-            throw new Error('Some of the required information is either missing or malformatted. Please, correct your data and try again.');
-          } else if (response.status === 500) {
-            throw new Error('A server error has occurred. Please, try again later.');
-          }
-        } else {
-          return response.json();
-        }
-      })
-      .then(data => {
-        setUserName('');
-        setUserEmail('');
-        setUserSubject('');
-        setUserMessage('');
-        handleResponse(setSuccess);
-      })
-      .catch(error => {
-        console.error(error);
+    try {
+      const response = await fetch('/', fetchConfig);
+      const data = await response.json();
+
+      if (!response.ok) {
         handleResponse(setError);
-        setErrorMsg(error.message);
-      });
+        setErrorMsg(data.errorMessage);
+        return;
+      } 
+
+      setUserName('');
+      setUserEmail('');
+      setUserSubject('');
+      setUserMessage('');
+      handleResponse(setSuccess);
+    } catch (err) {
+      handleResponse(setError);
+      setErrorMsg(err.message);
+    }
   }
 
   return (

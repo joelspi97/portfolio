@@ -18,6 +18,13 @@ You need to have both node and npm installed on your computer. I recommend insta
 
 To build this project I used Node v16.15.1 and npm v8.11.0, so it's also advisable that you use the same versions. 
 
+Follow these steps: 
+1. Open the project on your preferred code editor. 
+2. Open a terminal and go inside the backend directory: **cd backend** 
+3. Run the following command: **npm run devStart**
+4. Open a new terminal and go inside the frontend directory: **cd frontend**
+5. Run the following command: **npm start**
+
 ## Screenshots
 ![Screenshot of Joel's portoflio 1 of 4. It's the initial view, which is a picture of Joel coding con his laptop.](./screenshots/screenshot1.png)
 
@@ -26,13 +33,6 @@ To build this project I used Node v16.15.1 and npm v8.11.0, so it's also advisab
 ![Screenshot of Joel's portoflio 3 of 4. It's the projects section of Joel's portfolio, which contains cards with some information about each one of the projects.](./screenshots/screenshot3.png)
 
 ![Screenshot of Joel's portoflio 4 of 4. It's the contact form of Joel's portfolio.](./screenshots/screenshot4.png)
-
-Follow these steps: 
-1. Open the project on your preferred code editor. 
-2. Open a terminal and go inside the backend directory: **cd backend** 
-3. Run the following command: **npm run devStart**
-4. Open a new terminal and go inside the frontend directory: **cd frontend**
-5. Run the following command: **npm start**
 
 Make sure that the proxy address (declared inside of package.json) matches with the port in which you are running your back end server. 
 

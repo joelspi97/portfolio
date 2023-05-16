@@ -19,8 +19,13 @@ You need to have both node and npm installed on your computer. I recommend insta
 To build this project I used Node v16.15.1 and npm v8.11.0, so it's also advisable that you use the same versions. 
 
 ## Screenshots
-![Screenshot of Joel's portoflio 1 of 2. Showing the form modal users would fill to create a new blogpost.](./screenshots/screenshot1.png)
-![Screenshot of Joel's portoflio 2 of 2. Showing how a blogpost, with a lorem ipsum body and a placeholder image.](./screenshots/screenshot2.png)
+![Screenshot of Joel's portoflio 1 of 4. It's the initial view, which is a picture of Joel coding con his laptop.](./screenshots/screenshot1.png)
+
+![Screenshot of Joel's portoflio 2 of 4. It's the about-me section of the portfolio, which tells a little about Joel's professional experience and shows his technology stack.](./screenshots/screenshot2.png)
+
+![Screenshot of Joel's portoflio 3 of 4. It's the projects section of Joel's portfolio, which contains cards with some information about each one of the projects.](./screenshots/screenshot3.png)
+
+![Screenshot of Joel's portoflio 4 of 4. It's the contact form of Joel's portfolio.](./screenshots/screenshot4.png)
 
 Follow these steps: 
 1. Open the project on your preferred code editor. 

@@ -14,11 +14,20 @@ To build it I used the following:
 * Sass
 
 ## In case you want to run this project in your local environment: 
-To build it, I used Node v16.15.1 and npm v8.11.0.
+You need to have both node and npm installed on your computer. I recommend installing them by using the [Node Version Manager](https://github.com/nvm-sh/nvm) (nvm), otherwise you can download them from [here](https://nodejs.org/en). 
 
-1. npm install
-2. npm start (run a development server for the front end of the app)
-3. npm run serverDevStart (run a development back end server, necessary for the mailer form)
+To build this project I used Node v16.15.1 and npm v8.11.0, so it's also advisable that you use the same versions. 
+
+## Screenshots
+![Screenshot of Joel's portoflio 1 of 2. Showing the form modal users would fill to create a new blogpost.](./screenshots/screenshot1.png)
+![Screenshot of Joel's portoflio 2 of 2. Showing how a blogpost, with a lorem ipsum body and a placeholder image.](./screenshots/screenshot2.png)
+
+Follow these steps: 
+1. Open the project on your preferred code editor. 
+2. Open a terminal and go inside the backend directory: **cd backend** 
+3. Run the following command: **npm run devStart**
+4. Open a new terminal and go inside the frontend directory: **cd frontend**
+5. Run the following command: **npm start**
 
 Make sure that the proxy address (declared inside of package.json) matches with the port in which you are running your back end server. 
 

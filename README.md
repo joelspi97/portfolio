@@ -18,13 +18,13 @@ You need to have both node and npm installed on your computer. I recommend insta
 
 To build this project I used Node v16.15.1 and npm v8.11.0, so it's also advisable that you use the same versions. 
 
-Follow these steps: 
+**Follow these steps:** 
 1. Open the project on your preferred code editor. 
 1. Open a terminal and go inside the frontend directory: **cd frontend**
 1. Run the following command: **npm install**
 1. Run the following command: **npm start**
 
-__Optional__: You could also make the contact form functional, but that will require extra, more complex steps: 
+**Optional:** You could also make the contact form functional, but that will require extra, more complex steps: 
 1. Open a new terminal and go inside the backend directory: **cd backend** 
 1. Run the following command: **npm install**
 1. Create a file called **.env** and inside of it declare the following environment variables: 

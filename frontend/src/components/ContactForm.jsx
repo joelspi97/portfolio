@@ -46,7 +46,7 @@ function ContactForm() {
     setErrorMsg(null);
 
     try {
-      const response = await fetch('/', fetchConfig);
+      const response = await fetch(process.env.REACT_APP_SERVER_URL, fetchConfig);
       const data = await response.json();
 
       if (!response.ok) {

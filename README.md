@@ -25,14 +25,14 @@ To build this project I used Node v16.15.1 and npm v8.11.0, so it's also advisab
 1. Run the following command: **npm start**
 
 **Optional:** You could also make the contact form functional, but that will require extra, more complex steps: 
-1. Create a file called .env inside of the frontend folder, and declare this variable: **REACT_APP_SERVER_URL=/** (this forward slash value is replaced by the server's url when deploying the site on production)
 1. Open a new terminal and go inside the backend directory: **cd backend** 
 1. Run the following command: **npm install**
 1. Create a file called **.env** and inside of it declare the following environment variables: 
     1. **EMAIL**=insert_here_your_email (use a gmail account)
     1. **PASS**=insert_here_your_application_password (if you want to be able to use the contact form, you'll need to create an application password for your gmail account and authorize it)
     1. **PORT**=insert_here_the_port_number_in_which_you_want_to_run_the_project's_backend_server 
-1. Make sure that the proxy address (declared inside of frontend's package.json) matches with the port in which you are running your back end server. 
+    1. **ALLOWED_ORIGIN**=http://localhost:insert_here_the_port_number_of_your_frontend_development_server
+1. Create a file called .env inside of the frontend folder, and declare this variable: **REACT_APP_SERVER_URL=http://localhost:YOUR_SERVER_PORT/** 
 1. Run the following command: **npm run devStart**
 
 ## Screenshots

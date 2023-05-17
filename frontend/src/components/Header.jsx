@@ -6,7 +6,7 @@ import { loadFull } from 'tsparticles';
 import AnimatedDiv from './AnimatedDiv';
 import NavigationBar from './NavigationBar';
 import '../scss/components/header.scss';
-import profilePicture from '../assets/profile-picture.jpg';
+import profilePicture from '../assets/profile-picture-2.jpg';
 
 function Header() {
   tsParticles.load("tsparticles", particlesConfig);

@@ -30,9 +30,9 @@ To build this project I used Node v16.15.1 and npm v8.11.0, so it's also advisab
 1. Create a file called **.env** and inside of it declare the following environment variables: 
     1. **EMAIL**=insert_here_your_email (use a gmail account)
     1. **PASS**=insert_here_your_application_password (if you want to be able to use the contact form, you'll need to create an application password for your gmail account and authorize it)
-    1. **PORT**=insert_here_the_port_number_in_which_you_want_to_run_the_project's_backend_server 
-    1. **ALLOWED_ORIGIN**=http://localhost:insert_here_the_port_number_of_your_frontend_development_server
-1. Create a file called .env inside of the frontend folder, and declare this variable: **REACT_APP_SERVER_URL=http://localhost:YOUR_SERVER_PORT/** 
+    1. **PORT**=port_in_which_you_want_to_run_the_project's_backend_server 
+    1. **ALLOWED_ORIGIN**=http://localhost:frontend_development_server_port
+1. Create a file called .env inside of the frontend folder, and declare this variable: **REACT_APP_SERVER_URL=http://localhost:YOUR_FRONTEND_SERVER_PORT/** 
 1. Run the following command: **npm run devStart**
 
 ## Screenshots

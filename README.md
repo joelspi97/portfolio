@@ -13,6 +13,8 @@ To build it I used the following:
 * Express 
 * Sass
 
+## Production URL: https://joelspinelli.netlify.app/
+
 ## In case you want to run this project in your local environment: 
 You need to have both node and npm installed on your computer. I recommend installing them by using the [Node Version Manager](https://github.com/nvm-sh/nvm) (nvm), otherwise you can download them from [here](https://nodejs.org/en). 
 

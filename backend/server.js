@@ -4,8 +4,11 @@ if (process.env.NODE_ENV !== 'production') {
 
 const express = require('express');
 const app = express();
+
+const cors = require('cors');
 const nodemailer = require('nodemailer');
 
+app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(express.json());
 
 app.post('/', (req, res) => {

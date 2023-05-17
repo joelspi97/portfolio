@@ -25,7 +25,7 @@ To build this project I used Node v16.15.1 and npm v8.11.0, so it's also advisab
 1. Run the following command: **npm start**
 
 **Optional:** You could also make the contact form functional, but that will require extra, more complex steps: 
-1. Create a file called .env inside of the frontend folder, and declare this variable: REACT_APP_SERVER_URL=/ (this forward slash is replaced when deploying the site on production)
+1. Create a file called .env inside of the frontend folder, and declare this variable: **REACT_APP_SERVER_URL=/** (this forward slash value is replaced by the server's url when deploying the site on production)
 1. Open a new terminal and go inside the backend directory: **cd backend** 
 1. Run the following command: **npm install**
 1. Create a file called **.env** and inside of it declare the following environment variables: 

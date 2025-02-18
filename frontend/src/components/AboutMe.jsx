@@ -25,17 +25,19 @@ function AboutMe() {
       </AnimatedDiv>
       <AnimatedDiv elementClassName="about-me__text-container center-content">
         <p>
-          <span>I'm a Frontend Web Developer</span> with 4 years of professional experience, and a huge passion for programming.
+          <span>I'm a Frontend Web Developer</span> with 4 years of professional experience and a deep passion for programming.
           <br />
-          I'm proficient in both JavaScript and TypeScript, and I've built many apps using technologies such as <span>React, Angular (2+)</span> and <span>NodeJS</span>, 
+          I specialize in JavaScript and TypeScript, building applications with technologies like <span>React, Angular (2+)</span> and <span>NodeJS</span>.
         </p>
-        
         <p>
           Currently working as a <span>Frontend Developer</span> at
           {' '} <a className="simple-link focusable" href="https://www.innovateod.com/" target="_blank" rel="noreferrer" title="Visit the official Innovate Group website">Innovate Group</a>, using <span>React</span> and <span>JavaScript</span>.
         </p>
-        
-        <p>My goal is to make every website I work on fully responsive, pixel perfect and accessible, and I'm interested in learning mobile technologies in the future, such as <span>React Native and Swift</span>.</p>
+        <p>
+          My goal is to create fully responsive, pixel-perfect, and accessible websites. 
+          <br />
+          I'm also eager to expand my skills into mobile development, particularly with <span>React Native</span> and <span>Swift</span>.
+        </p>
       </AnimatedDiv>
       <div className="about-me__stack center-content">
         <AnimatedDiv>

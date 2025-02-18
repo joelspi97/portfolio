@@ -45,7 +45,7 @@ function Header() {
           <h1 className="section-heading">
             <span>Joel Spinelli</span>
             <br />
-            <span>Full Stack Developer</span>
+            <span>Frontend Developer</span>
           </h1>
         </AnimatedDiv>
         <AnimatedDiv>
